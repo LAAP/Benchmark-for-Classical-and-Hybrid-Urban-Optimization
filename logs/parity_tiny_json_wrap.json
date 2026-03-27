@@ -1,4 +1,0 @@
-{
-  "format": "json",
-  "content_preview": "{\n  \"experiment\": {\n    \"id\": \"exp_c64ba80eac\",\n    \"scenario\": {\n      \"id\": \"scenario_2227b5bb4d\",\n      \"seed\": 999,\n      \"density_target\": 0.5,\n      \"compatibility_strength\": 1.0,\n      \"objective_weights\": {\n        \"active_sectors\": 1.0,\n        \"skyline_height\": 1.0,\n        \"compactness\": 1.0,\n        \"density_deviation\": 1.0,\n        \"compatibility\": 1.0,\n        \"accessibility\": 0.5\n      },\n      \"blocks\": [\n        {\n          \"id\": \"B0\",\n          \"width\": 6,\n          \"depth\": 5,\n          \"min_height\": 3,\n          \"max_height\": 5,\n          \"block_type\": \"residential\",\n          \"density_weight\": 1.5353,\n          \"compatibility_tags\": [\n            \"residential\",\n            \"single_use\"\n          ]\n        },\n        {\n          \"id\": \"B1\",\n          \"width\": 6,\n       "
-}
