@@ -1,0 +1,893 @@
+{
+  "experiment": {
+    "id": "exp_1b5a2a59bf",
+    "scenario": {
+      "id": "scenario_3cd56c88a2",
+      "seed": 123,
+      "density_target": 0.0,
+      "compatibility_strength": 1.0,
+      "objective_weights": {
+        "active_sectors": 1.0,
+        "skyline_height": 1.0,
+        "compactness": 1.0,
+        "density_deviation": 1.0,
+        "compatibility": 1.0,
+        "accessibility": 0.5
+      },
+      "blocks": [
+        {
+          "id": "B0",
+          "width": 8,
+          "depth": 10,
+          "min_height": 3,
+          "max_height": 4,
+          "block_type": "residential",
+          "density_weight": 0.7706,
+          "compatibility_tags": [
+            "residential",
+            "single_use"
+          ]
+        },
+        {
+          "id": "B1",
+          "width": 7,
+          "depth": 9,
+          "min_height": 7,
+          "max_height": 15,
+          "block_type": "residential",
+          "density_weight": 1.6054,
+          "compatibility_tags": [
+            "residential",
+            "single_use"
+          ]
+        },
+        {
+          "id": "B2",
+          "width": 8,
+          "depth": 10,
+          "min_height": 4,
+          "max_height": 14,
+          "block_type": "office",
+          "density_weight": 1.2778,
+          "compatibility_tags": [
+            "office",
+            "mixed_use"
+          ]
+        },
+        {
+          "id": "B3",
+          "width": 3,
+          "depth": 9,
+          "min_height": 8,
+          "max_height": 17,
+          "block_type": "office",
+          "density_weight": 1.2462,
+          "compatibility_tags": [
+            "office",
+            "single_use"
+          ]
+        },
+        {
+          "id": "B4",
+          "width": 10,
+          "depth": 9,
+          "min_height": 5,
+          "max_height": 14,
+          "block_type": "green",
+          "density_weight": 1.505,
+          "compatibility_tags": [
+            "green",
+            "single_use"
+          ]
+        },
+        {
+          "id": "B5",
+          "width": 4,
+          "depth": 10,
+          "min_height": 8,
+          "max_height": 13,
+          "block_type": "commercial",
+          "density_weight": 1.0043,
+          "compatibility_tags": [
+            "commercial",
+            "single_use"
+          ]
+        },
+        {
+          "id": "B6",
+          "width": 4,
+          "depth": 10,
+          "min_height": 6,
+          "max_height": 16,
+          "block_type": "civic",
+          "density_weight": 0.6196,
+          "compatibility_tags": [
+            "civic",
+            "mixed_use"
+          ]
+        },
+        {
+          "id": "B7",
+          "width": 4,
+          "depth": 8,
+          "min_height": 3,
+          "max_height": 9,
+          "block_type": "green",
+          "density_weight": 1.0869,
+          "compatibility_tags": [
+            "green",
+            "mixed_use"
+          ]
+        },
+        {
+          "id": "B8",
+          "width": 3,
+          "depth": 7,
+          "min_height": 6,
+          "max_height": 17,
+          "block_type": "green",
+          "density_weight": 1.253,
+          "compatibility_tags": [
+            "green",
+            "mixed_use"
+          ]
+        },
+        {
+          "id": "B9",
+          "width": 5,
+          "depth": 10,
+          "min_height": 6,
+          "max_height": 14,
+          "block_type": "commercial",
+          "density_weight": 0.7617,
+          "compatibility_tags": [
+            "commercial",
+            "single_use"
+          ]
+        },
+        {
+          "id": "B10",
+          "width": 3,
+          "depth": 7,
+          "min_height": 5,
+          "max_height": 16,
+          "block_type": "commercial",
+          "density_weight": 1.1211,
+          "compatibility_tags": [
+            "commercial",
+            "single_use"
+          ]
+        },
+        {
+          "id": "B11",
+          "width": 3,
+          "depth": 4,
+          "min_height": 7,
+          "max_height": 9,
+          "block_type": "civic",
+          "density_weight": 1.4485,
+          "compatibility_tags": [
+            "civic",
+            "single_use"
+          ]
+        }
+      ],
+      "sectors": [
+        {
+          "id": "S0",
+          "width": 22,
+          "depth": 24,
+          "max_height": 31,
+          "capacity": 204,
+          "context": {
+            "sun_score": 0.26655381253138355,
+            "transit_score": 0.8385035164743577
+          }
+        },
+        {
+          "id": "S1",
+          "width": 28,
+          "depth": 22,
+          "max_height": 36,
+          "capacity": 237,
+          "context": {
+            "sun_score": 0.5623187149479814,
+            "transit_score": 0.34079822787707015
+          }
+        },
+        {
+          "id": "S2",
+          "width": 22,
+          "depth": 23,
+          "max_height": 32,
+          "capacity": 186,
+          "context": {
+            "sun_score": 0.5609620089366762,
+            "transit_score": 0.7016897890356433
+          }
+        },
+        {
+          "id": "S3",
+          "width": 23,
+          "depth": 22,
+          "max_height": 36,
+          "capacity": 122,
+          "context": {
+            "sun_score": 0.8786303371012171,
+            "transit_score": 0.37759477697221155
+          }
+        }
+      ],
+      "created_at": "2026-03-25T17:07:30.862550Z"
+    },
+    "config": {
+      "repeats": 1,
+      "classical_solver": "cp_sat",
+      "hybrid_solver": "qubo_hybrid",
+      "run_mode": "parallel",
+      "common_budget": {
+        "max_time_seconds": 4.0,
+        "max_iterations": 35,
+        "seed": 123,
+        "warm_start": false,
+        "penalty_scale": 60.0,
+        "conflict_penalty_multiplier": 6.0,
+        "strict_parity_mode": true
+      },
+      "seed_policy": "fixed",
+      "benchmark_preset": "custom",
+      "fairness_classification": "repair-assisted approximate-comparable",
+      "penalty_sweep": {
+        "enabled": false,
+        "candidates": [
+          5.0,
+          10.0,
+          20.0,
+          30.0
+        ],
+        "selection_metric": "feasibility_then_objective"
+      }
+    },
+    "status": "completed",
+    "created_at": "2026-03-25T17:07:32.796549Z",
+    "updated_at": "2026-03-25T17:11:47.897873Z",
+    "trials": [
+      {
+        "trial_index": 0,
+        "solver_kind": "classical",
+        "solver_name": "cp_sat",
+        "backend_type": "ortools_cp_sat",
+        "seed": 123,
+        "elapsed_ms": 323.57483310624957,
+        "objective": 5.301612903225804,
+        "feasible": false,
+        "violation_count": 48,
+        "violation_breakdown": {
+          "overlap_violations": 48,
+          "boundary_violations": 0,
+          "assignment_violations": 0,
+          "activation_consistency_violations": 0,
+          "density_violations": 0,
+          "other_violations": 0
+        },
+        "best_progression": [
+          6.892096774193545,
+          6.096854838709674,
+          5.831774193548385,
+          5.699233870967739,
+          5.619709677419352,
+          5.301612903225804
+        ],
+        "solution": {
+          "placements": [
+            {
+              "block_id": "B0",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 3
+            },
+            {
+              "block_id": "B1",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 2,
+              "height": 7
+            },
+            {
+              "block_id": "B2",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 4
+            },
+            {
+              "block_id": "B3",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 6,
+              "height": 8
+            },
+            {
+              "block_id": "B4",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 5
+            },
+            {
+              "block_id": "B5",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 8
+            },
+            {
+              "block_id": "B6",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 8,
+              "height": 6
+            },
+            {
+              "block_id": "B7",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 3
+            },
+            {
+              "block_id": "B8",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 6,
+              "height": 6
+            },
+            {
+              "block_id": "B9",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 2,
+              "height": 6
+            },
+            {
+              "block_id": "B10",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 5
+            },
+            {
+              "block_id": "B11",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 7
+            }
+          ],
+          "active_sectors": [
+            "S0"
+          ],
+          "objective": 5.301612903225804,
+          "feasible": false,
+          "violations": [
+            "overlap:B0:B1",
+            "overlap:B0:B2",
+            "overlap:B0:B4",
+            "overlap:B0:B5",
+            "overlap:B0:B7",
+            "overlap:B0:B9",
+            "overlap:B0:B10",
+            "overlap:B0:B11",
+            "overlap:B1:B2",
+            "overlap:B1:B3",
+            "overlap:B1:B4",
+            "overlap:B1:B5",
+            "overlap:B1:B6",
+            "overlap:B1:B7",
+            "overlap:B1:B8",
+            "overlap:B1:B9",
+            "overlap:B1:B10",
+            "overlap:B1:B11",
+            "overlap:B2:B4",
+            "overlap:B2:B5",
+            "overlap:B2:B7",
+            "overlap:B2:B9",
+            "overlap:B2:B10",
+            "overlap:B2:B11",
+            "overlap:B3:B5",
+            "overlap:B3:B6",
+            "overlap:B3:B8",
+            "overlap:B3:B9",
+            "overlap:B3:B11",
+            "overlap:B4:B5",
+            "overlap:B4:B7",
+            "overlap:B4:B9",
+            "overlap:B4:B10",
+            "overlap:B4:B11",
+            "overlap:B5:B7",
+            "overlap:B5:B8",
+            "overlap:B5:B9",
+            "overlap:B5:B10",
+            "overlap:B5:B11",
+            "overlap:B6:B8",
+            "overlap:B7:B9",
+            "overlap:B7:B10",
+            "overlap:B7:B11",
+            "overlap:B8:B9",
+            "overlap:B8:B11",
+            "overlap:B9:B10",
+            "overlap:B9:B11",
+            "overlap:B10:B11"
+          ],
+          "violation_breakdown": {
+            "overlap_violations": 48,
+            "boundary_violations": 0,
+            "assignment_violations": 0,
+            "activation_consistency_violations": 0,
+            "density_violations": 0,
+            "other_violations": 0
+          },
+          "density_metrics": {
+            "density_total": 79.0013,
+            "density_min_total": 79.0013,
+            "density_max_total": 182.99849999999998,
+            "density_norm": 0.0,
+            "density_target": 0.0,
+            "density_gap": 0.0,
+            "density_tolerance": 0.2
+          },
+          "exact_optimum": false,
+          "solver_metadata": {}
+        },
+        "logs": [
+          "cp_sat_status=CpSolverStatus.INFEASIBLE",
+          "elapsed_ms=322.51"
+        ]
+      },
+      {
+        "trial_index": 0,
+        "solver_kind": "hybrid",
+        "solver_name": "qubo_hybrid",
+        "backend_type": "simulated_annealing_fallback",
+        "seed": 123,
+        "elapsed_ms": 254753.71724995784,
+        "objective": 17.613888888907518,
+        "feasible": false,
+        "violation_count": 10,
+        "violation_breakdown": {
+          "overlap_violations": 10,
+          "boundary_violations": 0,
+          "assignment_violations": 0,
+          "activation_consistency_violations": 0,
+          "density_violations": 0,
+          "other_violations": 0
+        },
+        "best_progression": [
+          21.13666666668902,
+          18.494583333352896,
+          15.852500000016764,
+          13.210416666680638,
+          10.56833333334451,
+          7.926250000008382,
+          17.613888888907518
+        ],
+        "solution": {
+          "placements": [
+            {
+              "block_id": "B0",
+              "sector_id": "S1",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 3
+            },
+            {
+              "block_id": "B1",
+              "sector_id": "S3",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 7
+            },
+            {
+              "block_id": "B2",
+              "sector_id": "S2",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 4
+            },
+            {
+              "block_id": "B3",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 8
+            },
+            {
+              "block_id": "B4",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 8,
+              "height": 5
+            },
+            {
+              "block_id": "B5",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 14,
+              "height": 8
+            },
+            {
+              "block_id": "B6",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 22,
+              "height": 6
+            },
+            {
+              "block_id": "B7",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 28,
+              "height": 3
+            },
+            {
+              "block_id": "B8",
+              "sector_id": "S1",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 6
+            },
+            {
+              "block_id": "B9",
+              "sector_id": "S1",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 6
+            },
+            {
+              "block_id": "B10",
+              "sector_id": "S1",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 5
+            },
+            {
+              "block_id": "B11",
+              "sector_id": "S1",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 7
+            }
+          ],
+          "active_sectors": [
+            "S0",
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "objective": 17.613888888907518,
+          "feasible": false,
+          "violations": [
+            "overlap:B0:B8",
+            "overlap:B0:B9",
+            "overlap:B0:B10",
+            "overlap:B0:B11",
+            "overlap:B8:B9",
+            "overlap:B8:B10",
+            "overlap:B8:B11",
+            "overlap:B9:B10",
+            "overlap:B9:B11",
+            "overlap:B10:B11"
+          ],
+          "violation_breakdown": {
+            "overlap_violations": 10,
+            "boundary_violations": 0,
+            "assignment_violations": 0,
+            "activation_consistency_violations": 0,
+            "density_violations": 0,
+            "other_violations": 0
+          },
+          "density_metrics": {
+            "density_total": 79.0013,
+            "density_min_total": 79.0013,
+            "density_max_total": 182.99849999999998,
+            "density_norm": 0.0,
+            "density_target": 0.0,
+            "density_gap": 0.0,
+            "density_tolerance": 0.2
+          },
+          "exact_optimum": false,
+          "solver_metadata": {
+            "qubo_soft_penalty_constraints": true,
+            "decode_mode": "feasibility_first_greedy",
+            "sample_activation_fallback": true
+          }
+        },
+        "logs": [
+          "backend=simulated_annealing_fallback",
+          "decode=feasibility_first_greedy",
+          "decode=feasibility_first_overlap_repair",
+          "elapsed_ms=254753.35"
+        ]
+      }
+    ],
+    "selected_penalty_scale": 60.0,
+    "penalty_sweep_results": [],
+    "density_achievability": {
+      "achievable_density_min": 0.0,
+      "achievable_density_max": 0.0,
+      "target_density": 0.55,
+      "achievability_valid": true,
+      "target_inside_achievable_band": false,
+      "feasibility_margin": -0.55,
+      "candidate_truncation_risk": true,
+      "candidate_cap_used": 24,
+      "global_density_total_min": 79.0013,
+      "global_density_total_max": 182.99849999999998,
+      "strict_parity_mode": true,
+      "items": [
+        {
+          "block_id": "B0",
+          "candidate_count": 27,
+          "density_total_min": 2.3118,
+          "density_total_max": 2.3118
+        },
+        {
+          "block_id": "B1",
+          "candidate_count": 27,
+          "density_total_min": 11.2378,
+          "density_total_max": 11.2378
+        },
+        {
+          "block_id": "B2",
+          "candidate_count": 27,
+          "density_total_min": 5.1112,
+          "density_total_max": 5.1112
+        },
+        {
+          "block_id": "B3",
+          "candidate_count": 27,
+          "density_total_min": 9.9696,
+          "density_total_max": 9.9696
+        },
+        {
+          "block_id": "B4",
+          "candidate_count": 27,
+          "density_total_min": 7.5249999999999995,
+          "density_total_max": 7.5249999999999995
+        },
+        {
+          "block_id": "B5",
+          "candidate_count": 27,
+          "density_total_min": 8.0344,
+          "density_total_max": 8.0344
+        },
+        {
+          "block_id": "B6",
+          "candidate_count": 27,
+          "density_total_min": 3.7176,
+          "density_total_max": 3.7176
+        },
+        {
+          "block_id": "B7",
+          "candidate_count": 27,
+          "density_total_min": 3.2607,
+          "density_total_max": 3.2607
+        },
+        {
+          "block_id": "B8",
+          "candidate_count": 27,
+          "density_total_min": 7.517999999999999,
+          "density_total_max": 7.517999999999999
+        },
+        {
+          "block_id": "B9",
+          "candidate_count": 27,
+          "density_total_min": 4.5702,
+          "density_total_max": 4.5702
+        },
+        {
+          "block_id": "B10",
+          "candidate_count": 27,
+          "density_total_min": 5.6055,
+          "density_total_max": 5.6055
+        },
+        {
+          "block_id": "B11",
+          "candidate_count": 27,
+          "density_total_min": 10.1395,
+          "density_total_max": 10.1395
+        }
+      ],
+      "target_adjusted_for_feasibility": 0.0,
+      "target_adjustment_applied": true
+    }
+  },
+  "stats": {
+    "classical": {
+      "solver_name": "cp_sat",
+      "backend_type": "ortools_cp_sat",
+      "runtime": {
+        "mean": 323.57483310624957,
+        "median": 323.57483310624957,
+        "std": 0.0,
+        "ci95_low": 323.57483310624957,
+        "ci95_high": 323.57483310624957
+      },
+      "objective": {
+        "mean": 5.301612903225804,
+        "median": 5.301612903225804,
+        "std": 0.0,
+        "ci95_low": 5.301612903225804,
+        "ci95_high": 5.301612903225804
+      },
+      "feasibility_rate": 0.0,
+      "best_objective": 5.301612903225804,
+      "violation_mean": 48.0,
+      "violation_breakdown_mean": {
+        "activation_consistency_violations": 0.0,
+        "assignment_violations": 0.0,
+        "boundary_violations": 0.0,
+        "density_violations": 0.0,
+        "other_violations": 0.0,
+        "overlap_violations": 48.0
+      }
+    },
+    "hybrid": {
+      "solver_name": "qubo_hybrid",
+      "backend_type": "simulated_annealing_fallback",
+      "runtime": {
+        "mean": 254753.71724995784,
+        "median": 254753.71724995784,
+        "std": 0.0,
+        "ci95_low": 254753.71724995784,
+        "ci95_high": 254753.71724995784
+      },
+      "objective": {
+        "mean": 17.613888888907518,
+        "median": 17.613888888907518,
+        "std": 0.0,
+        "ci95_low": 17.613888888907518,
+        "ci95_high": 17.613888888907518
+      },
+      "feasibility_rate": 0.0,
+      "best_objective": 17.613888888907518,
+      "violation_mean": 10.0,
+      "violation_breakdown_mean": {
+        "activation_consistency_violations": 0.0,
+        "assignment_violations": 0.0,
+        "boundary_violations": 0.0,
+        "density_violations": 0.0,
+        "other_violations": 0.0,
+        "overlap_violations": 10.0
+      }
+    },
+    "paired_p_value": null,
+    "paired_effect_size": null,
+    "fairness_report": {
+      "comparison_type": "repair-assisted approximate-comparable",
+      "fairness_classification_inferred": "repair-assisted approximate-comparable",
+      "classification_logic": [
+        "exact-comparable is not assigned to classical vs hybrid QUBO runs: CP-SAT uses hard constraints; QUBO uses penalties.",
+        "repair-assisted approximate-comparable applies when hybrid trials use feasibility-first greedy decode (decode_mode=feasibility_first_greedy) and/or sample_activation_fallback, or matching log markers.",
+        "strong-approximate-comparable applies under strict parity with hybrid but without recorded repair-assisted decode (legacy runs).",
+        "exploratory-only applies when strict_parity_mode is false."
+      ],
+      "hybrid_methodology_flags": {
+        "uses_soft_qubo_penalties": true,
+        "repair_assisted_decode": true,
+        "exact_solver_parity_claim": false
+      },
+      "solver_mode": "strict_parity_mode",
+      "objective_differences": [
+        "Both use shared candidate linear terms skyline/compactness/density deviation.",
+        "QUBO includes penalty-enforced activation consistency; CP-SAT encodes it as hard implications.",
+        "Energy objective in QUBO may include residual penalty influence."
+      ],
+      "constraint_differences": [
+        "Both include exactly-one assignment and pairwise non-overlap over shared candidates.",
+        "CP-SAT constraints are hard; QUBO constraints rely on calibrated penalties."
+      ],
+      "formulation_differences": [
+        "Both solvers share discrete candidate placement variables (sector,x,y,z,orientation,height).",
+        "CP-SAT enforces non-overlap as hard linear constraints; QUBO enforces via quadratic penalties.",
+        "Sector activation variables are explicit in both; QUBO ties x->y via penalties."
+      ],
+      "backend_differences": [
+        "Classical uses OR-Tools CP-SAT branch-and-bound + SAT search.",
+        "Hybrid uses D-Wave hybrid sampler when available, otherwise simulated annealing fallback."
+      ],
+      "penalty_based_approximations": [
+        "QUBO penalty scaling may admit low-penalty infeasible samples before post-checking."
+      ],
+      "discretization_effects": [
+        "Candidate-grid discretization (stride/max candidates) approximates continuous placement."
+      ],
+      "parity_claim": "Strict mode aligns candidate sets and terms; hybrid remains penalty-encoded with non-literal decode, so claims must stay approximate.",
+      "interpretation_guidance": "approximate comparison (repair-assisted decode; not literal QUBO placement or hard-constraint parity)",
+      "constraint_diagnostics": {
+        "classical_top_failures": [
+          [
+            "overlap_violations",
+            48.0
+          ],
+          [
+            "activation_consistency_violations",
+            0.0
+          ]
+        ],
+        "hybrid_top_failures": [
+          [
+            "overlap_violations",
+            10.0
+          ],
+          [
+            "activation_consistency_violations",
+            0.0
+          ]
+        ],
+        "classical_failure_driver": "formulation-related",
+        "hybrid_failure_driver": "budget-related",
+        "same_failure_pattern": [
+          "overlap_violations",
+          "activation_consistency_violations"
+        ],
+        "density_failure_same_trials": [],
+        "density_gap_mean": {
+          "classical": 0.0,
+          "hybrid": 0.0
+        },
+        "density_failure_reasoning": "solver-specific behavior dominates"
+      },
+      "density_achievability_note": "If target lies outside candidate-achievable band, target adjustment may be applied before solving."
+    }
+  }
+}

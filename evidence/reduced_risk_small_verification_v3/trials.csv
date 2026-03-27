@@ -1,0 +1,3 @@
+trial_index,solver_kind,seed,elapsed_ms,objective,feasible,violations,backend_type,placement_geometry_valid,solver_certified_geometry,overlap_violations,boundary_violations,assignment_violations,activation_consistency_violations,density_violations,other_violations
+0,SolverKind.classical,123,132.6671,0.000000,0,1,ortools_cp_sat,0,0,0,0,0,0,0,1
+0,SolverKind.hybrid,123,248176.2433,18.612634,0,15,simulated_annealing_fallback,1,1,14,0,0,0,1,0
