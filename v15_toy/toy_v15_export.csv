@@ -1,7 +1,0 @@
-trial_index,solver_kind,seed,elapsed_ms,objective,feasible,violations,backend_type,overlap_violations,boundary_violations,assignment_violations,activation_consistency_violations,density_violations,other_violations
-0,SolverKind.classical,111,50.6771,5.516667,1,0,ortools_cp_sat,0,0,0,0,0,0
-0,SolverKind.hybrid,111,52492.7355,9.080000,1,0,simulated_annealing_fallback,0,0,0,0,0,0
-1,SolverKind.classical,222,53.0918,5.516667,1,0,ortools_cp_sat,0,0,0,0,0,0
-1,SolverKind.hybrid,222,52070.3521,9.080000,1,0,simulated_annealing_fallback,0,0,0,0,0,0
-2,SolverKind.classical,333,40.3910,5.516667,1,0,ortools_cp_sat,0,0,0,0,0,0
-2,SolverKind.hybrid,333,51213.9981,9.080000,1,0,simulated_annealing_fallback,0,0,0,0,0,0
