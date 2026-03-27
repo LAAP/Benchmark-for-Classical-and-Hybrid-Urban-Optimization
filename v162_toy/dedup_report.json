@@ -1,0 +1,901 @@
+{
+  "version": "v1.6.2",
+  "fingerprint_definition": "layout_fp = sha256[:16](canonical_json(grid, sorted candidates_per_block, candidate totals, conflict counts/densities, intra_block_exclusion_pairs, occupancy/footprint pressure, blocks_per_sector, mean_block_height_span)). Solver metrics excluded.",
+  "raw_instance_count": 24,
+  "unique_layout_count": 24,
+  "duplication_factor_raw_per_unique": 1.0,
+  "duplicate_groups": [],
+  "group_summaries": [
+    {
+      "layout_fingerprint": "98e54f4963f3c760",
+      "group_size": 1,
+      "seeds": [
+        101
+      ],
+      "representative_seed": 101
+    },
+    {
+      "layout_fingerprint": "9958669f400db670",
+      "group_size": 1,
+      "seeds": [
+        111
+      ],
+      "representative_seed": 111
+    },
+    {
+      "layout_fingerprint": "41aa2aed134b3a5d",
+      "group_size": 1,
+      "seeds": [
+        202
+      ],
+      "representative_seed": 202
+    },
+    {
+      "layout_fingerprint": "4483eb5987772831",
+      "group_size": 1,
+      "seeds": [
+        222
+      ],
+      "representative_seed": 222
+    },
+    {
+      "layout_fingerprint": "06f34026e75ef1b9",
+      "group_size": 1,
+      "seeds": [
+        303
+      ],
+      "representative_seed": 303
+    },
+    {
+      "layout_fingerprint": "e4b549a68fe22548",
+      "group_size": 1,
+      "seeds": [
+        333
+      ],
+      "representative_seed": 333
+    },
+    {
+      "layout_fingerprint": "56e7f3ec1bf6d966",
+      "group_size": 1,
+      "seeds": [
+        404
+      ],
+      "representative_seed": 404
+    },
+    {
+      "layout_fingerprint": "23cd7e4325074ac8",
+      "group_size": 1,
+      "seeds": [
+        515
+      ],
+      "representative_seed": 515
+    },
+    {
+      "layout_fingerprint": "15e2da14f82f4a42",
+      "group_size": 1,
+      "seeds": [
+        606
+      ],
+      "representative_seed": 606
+    },
+    {
+      "layout_fingerprint": "7dea2e3d973d6704",
+      "group_size": 1,
+      "seeds": [
+        717
+      ],
+      "representative_seed": 717
+    },
+    {
+      "layout_fingerprint": "cd8d7adc61c0a244",
+      "group_size": 1,
+      "seeds": [
+        828
+      ],
+      "representative_seed": 828
+    },
+    {
+      "layout_fingerprint": "d7134b1124f5d858",
+      "group_size": 1,
+      "seeds": [
+        939
+      ],
+      "representative_seed": 939
+    },
+    {
+      "layout_fingerprint": "b8855c7809c60650",
+      "group_size": 1,
+      "seeds": [
+        1049
+      ],
+      "representative_seed": 1049
+    },
+    {
+      "layout_fingerprint": "2d62034c75ff84e9",
+      "group_size": 1,
+      "seeds": [
+        1159
+      ],
+      "representative_seed": 1159
+    },
+    {
+      "layout_fingerprint": "5785f62e86c4170d",
+      "group_size": 1,
+      "seeds": [
+        1269
+      ],
+      "representative_seed": 1269
+    },
+    {
+      "layout_fingerprint": "81e8e5d5db26d2f5",
+      "group_size": 1,
+      "seeds": [
+        1379
+      ],
+      "representative_seed": 1379
+    },
+    {
+      "layout_fingerprint": "f2b3310cd6a02636",
+      "group_size": 1,
+      "seeds": [
+        1489
+      ],
+      "representative_seed": 1489
+    },
+    {
+      "layout_fingerprint": "6538f7dbade4be84",
+      "group_size": 1,
+      "seeds": [
+        1599
+      ],
+      "representative_seed": 1599
+    },
+    {
+      "layout_fingerprint": "c24395ef78e92314",
+      "group_size": 1,
+      "seeds": [
+        1709
+      ],
+      "representative_seed": 1709
+    },
+    {
+      "layout_fingerprint": "835c21079f87f95d",
+      "group_size": 1,
+      "seeds": [
+        1819
+      ],
+      "representative_seed": 1819
+    },
+    {
+      "layout_fingerprint": "510899b93103c974",
+      "group_size": 1,
+      "seeds": [
+        1929
+      ],
+      "representative_seed": 1929
+    },
+    {
+      "layout_fingerprint": "100c8a808a39c4d0",
+      "group_size": 1,
+      "seeds": [
+        2039
+      ],
+      "representative_seed": 2039
+    },
+    {
+      "layout_fingerprint": "aa75e22350b8910e",
+      "group_size": 1,
+      "seeds": [
+        2149
+      ],
+      "representative_seed": 2149
+    },
+    {
+      "layout_fingerprint": "916f951f0d4a669e",
+      "group_size": 1,
+      "seeds": [
+        2259
+      ],
+      "representative_seed": 2259
+    }
+  ],
+  "difficulty_counts_raw": {
+    "easy": 16,
+    "moderate": 7,
+    "hard": 1
+  },
+  "difficulty_counts_dedup": {
+    "easy": 16,
+    "moderate": 7,
+    "hard": 1
+  },
+  "dedup_feature_means_by_difficulty": {
+    "conflict_pair_count": {
+      "easy": 4706.5625,
+      "moderate": 5859.142857,
+      "hard": 6360.0
+    },
+    "conflict_density": {
+      "easy": 0.421169,
+      "moderate": 0.524309,
+      "hard": 0.56913
+    },
+    "inter_block_conflicts": {
+      "easy": 2906.5625,
+      "moderate": 4059.142857,
+      "hard": 4560.0
+    },
+    "inter_block_conflict_density": {
+      "easy": 0.260094,
+      "moderate": 0.363233,
+      "hard": 0.40805
+    },
+    "occupancy_pressure": {
+      "easy": 0.062238,
+      "moderate": 0.077429,
+      "hard": 0.0958
+    },
+    "footprint_pressure": {
+      "easy": 0.193238,
+      "moderate": 0.1993,
+      "hard": 0.2222
+    },
+    "cand_total": {
+      "easy": 150.0,
+      "moderate": 150.0,
+      "hard": 150.0
+    }
+  },
+  "dedup_table": [
+    {
+      "seed": 101,
+      "scenario_id": "scenario_9faa06b5cc",
+      "cand_total": 150,
+      "conflict_pair_count": 4741,
+      "conflict_density": 0.42425,
+      "inter_block_conflicts": 2941,
+      "inter_block_conflict_density": 0.26318,
+      "occupancy_pressure": 0.0574,
+      "footprint_pressure": 0.1732,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": true,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 0,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 85.83,
+      "runtime_hybrid_ms": 51805.78,
+      "difficulty": "easy",
+      "layout_fingerprint": "98e54f4963f3c760",
+      "group_size": 1,
+      "seeds_in_group": [
+        101
+      ],
+      "representative_seed": 101
+    },
+    {
+      "seed": 111,
+      "scenario_id": "scenario_cf13ac172d",
+      "cand_total": 150,
+      "conflict_pair_count": 4847,
+      "conflict_density": 0.43374,
+      "inter_block_conflicts": 3047,
+      "inter_block_conflict_density": 0.27266,
+      "occupancy_pressure": 0.0921,
+      "footprint_pressure": 0.2415,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": true,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 0,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 50.09,
+      "runtime_hybrid_ms": 52451.23,
+      "difficulty": "easy",
+      "layout_fingerprint": "9958669f400db670",
+      "group_size": 1,
+      "seeds_in_group": [
+        111
+      ],
+      "representative_seed": 111
+    },
+    {
+      "seed": 202,
+      "scenario_id": "scenario_e63c6c72b5",
+      "cand_total": 150,
+      "conflict_pair_count": 4519,
+      "conflict_density": 0.40438,
+      "inter_block_conflicts": 2719,
+      "inter_block_conflict_density": 0.24331,
+      "occupancy_pressure": 0.0548,
+      "footprint_pressure": 0.1227,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": true,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 0,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 41.2,
+      "runtime_hybrid_ms": 48269.73,
+      "difficulty": "easy",
+      "layout_fingerprint": "41aa2aed134b3a5d",
+      "group_size": 1,
+      "seeds_in_group": [
+        202
+      ],
+      "representative_seed": 202
+    },
+    {
+      "seed": 222,
+      "scenario_id": "scenario_9436e5d96f",
+      "cand_total": 150,
+      "conflict_pair_count": 6360,
+      "conflict_density": 0.56913,
+      "inter_block_conflicts": 4560,
+      "inter_block_conflict_density": 0.40805,
+      "occupancy_pressure": 0.0958,
+      "footprint_pressure": 0.2222,
+      "truncation_risk": true,
+      "classical_feasible": false,
+      "hybrid_feasible": false,
+      "overlap_violations_classical": 15,
+      "overlap_violations_hybrid": 1,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 51.11,
+      "runtime_hybrid_ms": 66865.22,
+      "difficulty": "hard",
+      "layout_fingerprint": "4483eb5987772831",
+      "group_size": 1,
+      "seeds_in_group": [
+        222
+      ],
+      "representative_seed": 222
+    },
+    {
+      "seed": 303,
+      "scenario_id": "scenario_61e52a3337",
+      "cand_total": 150,
+      "conflict_pair_count": 5019,
+      "conflict_density": 0.44913,
+      "inter_block_conflicts": 3219,
+      "inter_block_conflict_density": 0.28805,
+      "occupancy_pressure": 0.0615,
+      "footprint_pressure": 0.1471,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": true,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 0,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 45.94,
+      "runtime_hybrid_ms": 54012.98,
+      "difficulty": "easy",
+      "layout_fingerprint": "06f34026e75ef1b9",
+      "group_size": 1,
+      "seeds_in_group": [
+        303
+      ],
+      "representative_seed": 303
+    },
+    {
+      "seed": 333,
+      "scenario_id": "scenario_a9a59ff0e2",
+      "cand_total": 150,
+      "conflict_pair_count": 4221,
+      "conflict_density": 0.37772,
+      "inter_block_conflicts": 2421,
+      "inter_block_conflict_density": 0.21664,
+      "occupancy_pressure": 0.0554,
+      "footprint_pressure": 0.1754,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": true,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 0,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 44.41,
+      "runtime_hybrid_ms": 45487.54,
+      "difficulty": "easy",
+      "layout_fingerprint": "e4b549a68fe22548",
+      "group_size": 1,
+      "seeds_in_group": [
+        333
+      ],
+      "representative_seed": 333
+    },
+    {
+      "seed": 404,
+      "scenario_id": "scenario_61b5ac0e11",
+      "cand_total": 150,
+      "conflict_pair_count": 5501,
+      "conflict_density": 0.49226,
+      "inter_block_conflicts": 3701,
+      "inter_block_conflict_density": 0.33119,
+      "occupancy_pressure": 0.0652,
+      "footprint_pressure": 0.1235,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": true,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 0,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 46.99,
+      "runtime_hybrid_ms": 58259.97,
+      "difficulty": "easy",
+      "layout_fingerprint": "56e7f3ec1bf6d966",
+      "group_size": 1,
+      "seeds_in_group": [
+        404
+      ],
+      "representative_seed": 404
+    },
+    {
+      "seed": 515,
+      "scenario_id": "scenario_83024f9fa1",
+      "cand_total": 150,
+      "conflict_pair_count": 4053,
+      "conflict_density": 0.36268,
+      "inter_block_conflicts": 2253,
+      "inter_block_conflict_density": 0.20161,
+      "occupancy_pressure": 0.0524,
+      "footprint_pressure": 0.1754,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": true,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 0,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 39.3,
+      "runtime_hybrid_ms": 43856.1,
+      "difficulty": "easy",
+      "layout_fingerprint": "23cd7e4325074ac8",
+      "group_size": 1,
+      "seeds_in_group": [
+        515
+      ],
+      "representative_seed": 515
+    },
+    {
+      "seed": 606,
+      "scenario_id": "scenario_b64fe5241f",
+      "cand_total": 150,
+      "conflict_pair_count": 4797,
+      "conflict_density": 0.42926,
+      "inter_block_conflicts": 2997,
+      "inter_block_conflict_density": 0.26819,
+      "occupancy_pressure": 0.0888,
+      "footprint_pressure": 0.1925,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": true,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 0,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 39.76,
+      "runtime_hybrid_ms": 52409.43,
+      "difficulty": "easy",
+      "layout_fingerprint": "15e2da14f82f4a42",
+      "group_size": 1,
+      "seeds_in_group": [
+        606
+      ],
+      "representative_seed": 606
+    },
+    {
+      "seed": 717,
+      "scenario_id": "scenario_a5ee4777c8",
+      "cand_total": 150,
+      "conflict_pair_count": 4197,
+      "conflict_density": 0.37557,
+      "inter_block_conflicts": 2397,
+      "inter_block_conflict_density": 0.2145,
+      "occupancy_pressure": 0.0571,
+      "footprint_pressure": 0.3114,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": true,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 0,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 79.47,
+      "runtime_hybrid_ms": 44960.37,
+      "difficulty": "easy",
+      "layout_fingerprint": "7dea2e3d973d6704",
+      "group_size": 1,
+      "seeds_in_group": [
+        717
+      ],
+      "representative_seed": 717
+    },
+    {
+      "seed": 828,
+      "scenario_id": "scenario_b1685b2377",
+      "cand_total": 150,
+      "conflict_pair_count": 4125,
+      "conflict_density": 0.36913,
+      "inter_block_conflicts": 2325,
+      "inter_block_conflict_density": 0.20805,
+      "occupancy_pressure": 0.0636,
+      "footprint_pressure": 0.25,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": true,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 0,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 38.22,
+      "runtime_hybrid_ms": 44248.61,
+      "difficulty": "easy",
+      "layout_fingerprint": "cd8d7adc61c0a244",
+      "group_size": 1,
+      "seeds_in_group": [
+        828
+      ],
+      "representative_seed": 828
+    },
+    {
+      "seed": 939,
+      "scenario_id": "scenario_fc04bf089a",
+      "cand_total": 150,
+      "conflict_pair_count": 5057,
+      "conflict_density": 0.45253,
+      "inter_block_conflicts": 3257,
+      "inter_block_conflict_density": 0.29145,
+      "occupancy_pressure": 0.0694,
+      "footprint_pressure": 0.2092,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": false,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 1,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 43.75,
+      "runtime_hybrid_ms": 54183.23,
+      "difficulty": "moderate",
+      "layout_fingerprint": "d7134b1124f5d858",
+      "group_size": 1,
+      "seeds_in_group": [
+        939
+      ],
+      "representative_seed": 939
+    },
+    {
+      "seed": 1049,
+      "scenario_id": "scenario_939b8a630a",
+      "cand_total": 150,
+      "conflict_pair_count": 4727,
+      "conflict_density": 0.423,
+      "inter_block_conflicts": 2927,
+      "inter_block_conflict_density": 0.26192,
+      "occupancy_pressure": 0.0483,
+      "footprint_pressure": 0.1684,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": true,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 0,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 40.75,
+      "runtime_hybrid_ms": 50480.75,
+      "difficulty": "easy",
+      "layout_fingerprint": "b8855c7809c60650",
+      "group_size": 1,
+      "seeds_in_group": [
+        1049
+      ],
+      "representative_seed": 1049
+    },
+    {
+      "seed": 1159,
+      "scenario_id": "scenario_a0184a2801",
+      "cand_total": 150,
+      "conflict_pair_count": 4706,
+      "conflict_density": 0.42112,
+      "inter_block_conflicts": 2906,
+      "inter_block_conflict_density": 0.26004,
+      "occupancy_pressure": 0.0526,
+      "footprint_pressure": 0.225,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": true,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 0,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 39.9,
+      "runtime_hybrid_ms": 50650.38,
+      "difficulty": "easy",
+      "layout_fingerprint": "2d62034c75ff84e9",
+      "group_size": 1,
+      "seeds_in_group": [
+        1159
+      ],
+      "representative_seed": 1159
+    },
+    {
+      "seed": 1269,
+      "scenario_id": "scenario_e29cc7746e",
+      "cand_total": 150,
+      "conflict_pair_count": 5202,
+      "conflict_density": 0.4655,
+      "inter_block_conflicts": 3402,
+      "inter_block_conflict_density": 0.30443,
+      "occupancy_pressure": 0.0626,
+      "footprint_pressure": 0.2167,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": true,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 0,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 45.88,
+      "runtime_hybrid_ms": 55977.66,
+      "difficulty": "easy",
+      "layout_fingerprint": "5785f62e86c4170d",
+      "group_size": 1,
+      "seeds_in_group": [
+        1269
+      ],
+      "representative_seed": 1269
+    },
+    {
+      "seed": 1379,
+      "scenario_id": "scenario_2aba796a9d",
+      "cand_total": 150,
+      "conflict_pair_count": 5581,
+      "conflict_density": 0.49942,
+      "inter_block_conflicts": 3781,
+      "inter_block_conflict_density": 0.33834,
+      "occupancy_pressure": 0.0575,
+      "footprint_pressure": 0.2216,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": false,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 3,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 48.23,
+      "runtime_hybrid_ms": 59186.03,
+      "difficulty": "moderate",
+      "layout_fingerprint": "81e8e5d5db26d2f5",
+      "group_size": 1,
+      "seeds_in_group": [
+        1379
+      ],
+      "representative_seed": 1379
+    },
+    {
+      "seed": 1489,
+      "scenario_id": "scenario_b7dae3b5fb",
+      "cand_total": 150,
+      "conflict_pair_count": 6468,
+      "conflict_density": 0.57879,
+      "inter_block_conflicts": 4668,
+      "inter_block_conflict_density": 0.41772,
+      "occupancy_pressure": 0.0943,
+      "footprint_pressure": 0.179,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": false,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 1,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 55.55,
+      "runtime_hybrid_ms": 68724.66,
+      "difficulty": "moderate",
+      "layout_fingerprint": "f2b3310cd6a02636",
+      "group_size": 1,
+      "seeds_in_group": [
+        1489
+      ],
+      "representative_seed": 1489
+    },
+    {
+      "seed": 1599,
+      "scenario_id": "scenario_6c15f80f0a",
+      "cand_total": 150,
+      "conflict_pair_count": 6759,
+      "conflict_density": 0.60483,
+      "inter_block_conflicts": 4959,
+      "inter_block_conflict_density": 0.44376,
+      "occupancy_pressure": 0.0909,
+      "footprint_pressure": 0.2017,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": false,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 1,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 208.86,
+      "runtime_hybrid_ms": 71496.11,
+      "difficulty": "moderate",
+      "layout_fingerprint": "6538f7dbade4be84",
+      "group_size": 1,
+      "seeds_in_group": [
+        1599
+      ],
+      "representative_seed": 1599
+    },
+    {
+      "seed": 1709,
+      "scenario_id": "scenario_32ebb1f03c",
+      "cand_total": 150,
+      "conflict_pair_count": 6158,
+      "conflict_density": 0.55105,
+      "inter_block_conflicts": 4358,
+      "inter_block_conflict_density": 0.38998,
+      "occupancy_pressure": 0.0832,
+      "footprint_pressure": 0.2116,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": false,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 1,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 57.04,
+      "runtime_hybrid_ms": 66978.88,
+      "difficulty": "moderate",
+      "layout_fingerprint": "c24395ef78e92314",
+      "group_size": 1,
+      "seeds_in_group": [
+        1709
+      ],
+      "representative_seed": 1709
+    },
+    {
+      "seed": 1819,
+      "scenario_id": "scenario_0d6f8229db",
+      "cand_total": 150,
+      "conflict_pair_count": 4833,
+      "conflict_density": 0.43248,
+      "inter_block_conflicts": 3033,
+      "inter_block_conflict_density": 0.27141,
+      "occupancy_pressure": 0.0701,
+      "footprint_pressure": 0.25,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": true,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 0,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 62.92,
+      "runtime_hybrid_ms": 52578.6,
+      "difficulty": "easy",
+      "layout_fingerprint": "835c21079f87f95d",
+      "group_size": 1,
+      "seeds_in_group": [
+        1819
+      ],
+      "representative_seed": 1819
+    },
+    {
+      "seed": 1929,
+      "scenario_id": "scenario_c0b2cf8e69",
+      "cand_total": 150,
+      "conflict_pair_count": 4582,
+      "conflict_density": 0.41002,
+      "inter_block_conflicts": 2782,
+      "inter_block_conflict_density": 0.24895,
+      "occupancy_pressure": 0.0574,
+      "footprint_pressure": 0.1761,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": true,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 0,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 72.05,
+      "runtime_hybrid_ms": 49312.55,
+      "difficulty": "easy",
+      "layout_fingerprint": "510899b93103c974",
+      "group_size": 1,
+      "seeds_in_group": [
+        1929
+      ],
+      "representative_seed": 1929
+    },
+    {
+      "seed": 2039,
+      "scenario_id": "scenario_43c7e4e09f",
+      "cand_total": 150,
+      "conflict_pair_count": 5469,
+      "conflict_density": 0.4894,
+      "inter_block_conflicts": 3669,
+      "inter_block_conflict_density": 0.32832,
+      "occupancy_pressure": 0.0505,
+      "footprint_pressure": 0.1674,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": false,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 1,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 48.85,
+      "runtime_hybrid_ms": 58112.91,
+      "difficulty": "moderate",
+      "layout_fingerprint": "100c8a808a39c4d0",
+      "group_size": 1,
+      "seeds_in_group": [
+        2039
+      ],
+      "representative_seed": 2039
+    },
+    {
+      "seed": 2149,
+      "scenario_id": "scenario_38cd152930",
+      "cand_total": 150,
+      "conflict_pair_count": 5235,
+      "conflict_density": 0.46846,
+      "inter_block_conflicts": 3435,
+      "inter_block_conflict_density": 0.30738,
+      "occupancy_pressure": 0.0565,
+      "footprint_pressure": 0.1429,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": true,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 0,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 53.11,
+      "runtime_hybrid_ms": 56692.11,
+      "difficulty": "easy",
+      "layout_fingerprint": "aa75e22350b8910e",
+      "group_size": 1,
+      "seeds_in_group": [
+        2149
+      ],
+      "representative_seed": 2149
+    },
+    {
+      "seed": 2259,
+      "scenario_id": "scenario_d174733625",
+      "cand_total": 150,
+      "conflict_pair_count": 5522,
+      "conflict_density": 0.49414,
+      "inter_block_conflicts": 3722,
+      "inter_block_conflict_density": 0.33306,
+      "occupancy_pressure": 0.0962,
+      "footprint_pressure": 0.2046,
+      "truncation_risk": true,
+      "classical_feasible": true,
+      "hybrid_feasible": false,
+      "overlap_violations_classical": 0,
+      "overlap_violations_hybrid": 2,
+      "density_violations_classical": 0,
+      "density_violations_hybrid": 0,
+      "runtime_classical_ms": 55.86,
+      "runtime_hybrid_ms": 58682.52,
+      "difficulty": "moderate",
+      "layout_fingerprint": "916f951f0d4a669e",
+      "group_size": 1,
+      "seeds_in_group": [
+        2259
+      ],
+      "representative_seed": 2259
+    }
+  ],
+  "source_study_label": "v1.6.1 toy robustness",
+  "source_fairness_classification": "repair-assisted approximate-comparable"
+}
