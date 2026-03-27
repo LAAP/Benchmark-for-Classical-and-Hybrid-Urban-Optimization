@@ -1,0 +1,47 @@
+{
+  "scenario_request": {
+    "preset": "small",
+    "seed": 123,
+    "density_target": 0.55,
+    "compatibility_strength": 1.0,
+    "objective_weights": {
+      "active_sectors": 1.0,
+      "skyline_height": 1.0,
+      "compactness": 1.0,
+      "density_deviation": 1.0,
+      "compatibility": 1.0,
+      "accessibility": 0.5
+    }
+  },
+  "experiment_config": {
+    "repeats": 1,
+    "classical_solver": "cp_sat",
+    "hybrid_solver": "qubo_hybrid",
+    "run_mode": "parallel",
+    "common_budget": {
+      "max_time_seconds": 4.0,
+      "max_iterations": 35,
+      "seed": 123,
+      "warm_start": false,
+      "penalty_scale": 60.0,
+      "conflict_penalty_multiplier": 6.0,
+      "strict_parity_mode": true,
+      "sector_balanced_candidates": true,
+      "max_candidates_per_block_override": 48
+    },
+    "seed_policy": "fixed",
+    "benchmark_preset": "custom",
+    "fairness_classification": "repair-assisted approximate-comparable",
+    "penalty_sweep": {
+      "enabled": false,
+      "candidates": [
+        5.0,
+        10.0,
+        20.0,
+        30.0
+      ],
+      "selection_metric": "feasibility_then_objective"
+    },
+    "density_clamp_mode": "off"
+  }
+}

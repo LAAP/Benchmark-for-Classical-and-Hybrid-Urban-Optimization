@@ -1,0 +1,23 @@
+{
+  "run_label": "reduced-risk small verification run",
+  "not_a_full_benchmark_sweep": true,
+  "preset_geometry": "small",
+  "scenario_generation": {
+    "endpoint": "POST http://127.0.0.1:8010/scenarios/generate",
+    "body": {"preset": "small", "seed": 123, "density_target": 0.55}
+  },
+  "trial_seed_rationale": "123 is the first seed in BENCHMARK_MATRIX[\"small\"][\"seeds\"] ([123, 234, 345]), a fixed anchor for the preset without cherry-picking.",
+  "experiment": {
+    "endpoint": "POST http://127.0.0.1:8010/experiments/run",
+    "experiment_id": "exp_1b5a2a59bf",
+    "scenario_id": "scenario_3cd56c88a2",
+    "repeats": 1,
+    "benchmark_preset": "custom",
+    "note": "custom preset avoids matrix forcing repeats=3; budgets mirror small row: max_time_seconds=4.0, max_iterations=35.",
+    "strict_parity_mode": true,
+    "penalty_scale": 60.0,
+    "alignment_with_toy_controls": "penalty_scale matches ToyRobustnessSweepRequest default; repair-assisted decode is implicit in hybrid path."
+  },
+  "backend": {"host": "127.0.0.1", "port": 8010},
+  "wall_clock_http_ms": 255405
+}

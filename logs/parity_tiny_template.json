@@ -1,0 +1,29 @@
+{
+  "preset": "parity_tiny",
+  "standard_config": {
+    "seeds": [
+      101,
+      202,
+      303
+    ],
+    "max_time_seconds": 2.0,
+    "max_iterations": 25,
+    "repeats": 3
+  },
+  "sections": [
+    "runtime summary",
+    "objective summary",
+    "feasibility rate",
+    "per-constraint violation breakdown",
+    "fairness level",
+    "backend type",
+    "solver mode",
+    "comparison interpretability (exact/approx/exploratory)",
+    "known methodological limitations"
+  ],
+  "limitations_prompt": [
+    "State hard-vs-penalty constraint differences.",
+    "State discretization and candidate truncation effects.",
+    "State backend limitations (simulator fallback vs D-Wave)."
+  ]
+}

@@ -1,0 +1,917 @@
+{
+  "experiment": {
+    "id": "exp_119c3c3fa8",
+    "scenario": {
+      "id": "scenario_0126962b89",
+      "seed": 999,
+      "density_target": 0.5,
+      "compatibility_strength": 1.0,
+      "objective_weights": {
+        "active_sectors": 1.0,
+        "skyline_height": 1.0,
+        "compactness": 1.0,
+        "density_deviation": 1.0,
+        "compatibility": 1.0,
+        "accessibility": 0.5
+      },
+      "blocks": [
+        {
+          "id": "B0",
+          "width": 6,
+          "depth": 5,
+          "min_height": 5,
+          "max_height": 15,
+          "block_type": "residential",
+          "density_weight": 1.5353,
+          "compatibility_tags": [
+            "residential",
+            "single_use"
+          ]
+        },
+        {
+          "id": "B1",
+          "width": 6,
+          "depth": 9,
+          "min_height": 3,
+          "max_height": 8,
+          "block_type": "civic",
+          "density_weight": 0.8402,
+          "compatibility_tags": [
+            "civic",
+            "single_use"
+          ]
+        },
+        {
+          "id": "B2",
+          "width": 6,
+          "depth": 5,
+          "min_height": 8,
+          "max_height": 14,
+          "block_type": "green",
+          "density_weight": 1.662,
+          "compatibility_tags": [
+            "green",
+            "single_use"
+          ]
+        },
+        {
+          "id": "B3",
+          "width": 10,
+          "depth": 8,
+          "min_height": 4,
+          "max_height": 15,
+          "block_type": "green",
+          "density_weight": 1.1579,
+          "compatibility_tags": [
+            "green",
+            "mixed_use"
+          ]
+        },
+        {
+          "id": "B4",
+          "width": 6,
+          "depth": 4,
+          "min_height": 8,
+          "max_height": 19,
+          "block_type": "residential",
+          "density_weight": 1.5542,
+          "compatibility_tags": [
+            "residential",
+            "single_use"
+          ]
+        },
+        {
+          "id": "B5",
+          "width": 8,
+          "depth": 3,
+          "min_height": 4,
+          "max_height": 12,
+          "block_type": "office",
+          "density_weight": 1.1116,
+          "compatibility_tags": [
+            "office",
+            "mixed_use"
+          ]
+        }
+      ],
+      "sectors": [
+        {
+          "id": "S0",
+          "width": 23,
+          "depth": 22,
+          "max_height": 21,
+          "capacity": 245,
+          "context": {
+            "sun_score": 0.5737552086539675,
+            "transit_score": 0.49055580409903243
+          }
+        },
+        {
+          "id": "S1",
+          "width": 18,
+          "depth": 23,
+          "max_height": 30,
+          "capacity": 181,
+          "context": {
+            "sun_score": 0.6437106936760943,
+            "transit_score": 0.6425809178139255
+          }
+        }
+      ],
+      "created_at": "2026-03-23T20:09:33.943381Z"
+    },
+    "config": {
+      "repeats": 3,
+      "classical_solver": "cp_sat",
+      "hybrid_solver": "qubo_hybrid",
+      "run_mode": "parallel",
+      "common_budget": {
+        "max_time_seconds": 3.0,
+        "max_iterations": 30,
+        "seed": 42,
+        "warm_start": false,
+        "penalty_scale": 5.0,
+        "strict_parity_mode": true
+      },
+      "seed_policy": "fixed",
+      "benchmark_preset": "toy",
+      "fairness_classification": "approximate-comparable",
+      "penalty_sweep": {
+        "enabled": true,
+        "candidates": [
+          5.0,
+          10.0,
+          20.0
+        ],
+        "selection_metric": "feasibility_then_objective"
+      }
+    },
+    "status": "completed",
+    "created_at": "2026-03-23T22:11:42.454136Z",
+    "updated_at": "2026-03-23T22:38:22.422076Z",
+    "trials": [
+      {
+        "trial_index": 0,
+        "solver_kind": "classical",
+        "solver_name": "cp_sat",
+        "backend_type": "ortools_cp_sat",
+        "seed": 111,
+        "elapsed_ms": 505.55970799177885,
+        "objective": 3.67396619047619,
+        "feasible": false,
+        "violation_count": 1,
+        "violation_breakdown": {
+          "overlap_violations": 0,
+          "boundary_violations": 0,
+          "assignment_violations": 0,
+          "activation_consistency_violations": 0,
+          "density_violations": 1,
+          "other_violations": 0
+        },
+        "best_progression": [
+          4.776156047619047,
+          4.225061119047618,
+          4.041362809523809,
+          3.9495136547619043,
+          3.894404161904762,
+          3.67396619047619
+        ],
+        "solution": {
+          "placements": [
+            {
+              "block_id": "B0",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 4,
+              "height": 5
+            },
+            {
+              "block_id": "B1",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 6,
+              "z": 8,
+              "height": 3
+            },
+            {
+              "block_id": "B2",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 16,
+              "z": 0,
+              "height": 8
+            },
+            {
+              "block_id": "B3",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 4,
+              "z": 0,
+              "height": 4
+            },
+            {
+              "block_id": "B4",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 12,
+              "z": 0,
+              "height": 8
+            },
+            {
+              "block_id": "B5",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 4
+            }
+          ],
+          "active_sectors": [
+            "S0"
+          ],
+          "objective": 3.67396619047619,
+          "feasible": false,
+          "violations": [
+            "density_deviation_excess"
+          ],
+          "violation_breakdown": {
+            "overlap_violations": 0,
+            "boundary_violations": 0,
+            "assignment_violations": 0,
+            "activation_consistency_violations": 0,
+            "density_violations": 1,
+            "other_violations": 0
+          },
+          "exact_optimum": false
+        },
+        "logs": [
+          "cp_sat_status=CpSolverStatus.OPTIMAL",
+          "elapsed_ms=504.94"
+        ]
+      },
+      {
+        "trial_index": 0,
+        "solver_kind": "hybrid",
+        "solver_name": "qubo_hybrid",
+        "backend_type": "simulated_annealing_fallback",
+        "seed": 111,
+        "elapsed_ms": 526061.0725418665,
+        "objective": 4.4025376190519845,
+        "feasible": false,
+        "violation_count": 3,
+        "violation_breakdown": {
+          "overlap_violations": 2,
+          "boundary_violations": 0,
+          "assignment_violations": 0,
+          "activation_consistency_violations": 0,
+          "density_violations": 1,
+          "other_violations": 0
+        },
+        "best_progression": [
+          5.283045142862381,
+          4.622664500004584,
+          3.9622838571467858,
+          3.3019032142889886,
+          2.6415225714311905,
+          1.9811419285733929,
+          4.4025376190519845
+        ],
+        "solution": {
+          "placements": [
+            {
+              "block_id": "B0",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 6,
+              "z": 0,
+              "height": 5
+            },
+            {
+              "block_id": "B1",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 8,
+              "z": 0,
+              "height": 3
+            },
+            {
+              "block_id": "B2",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 2,
+              "y": 0,
+              "z": 0,
+              "height": 8
+            },
+            {
+              "block_id": "B3",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 4,
+              "z": 12,
+              "height": 4
+            },
+            {
+              "block_id": "B4",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 14,
+              "z": 2,
+              "height": 8
+            },
+            {
+              "block_id": "B5",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 10,
+              "z": 16,
+              "height": 4
+            }
+          ],
+          "active_sectors": [
+            "S0"
+          ],
+          "objective": 4.4025376190519845,
+          "feasible": false,
+          "violations": [
+            "overlap:B0:B1",
+            "overlap:B1:B4",
+            "density_deviation_excess"
+          ],
+          "violation_breakdown": {
+            "overlap_violations": 2,
+            "boundary_violations": 0,
+            "assignment_violations": 0,
+            "activation_consistency_violations": 0,
+            "density_violations": 1,
+            "other_violations": 0
+          },
+          "exact_optimum": false
+        },
+        "logs": [
+          "backend=simulated_annealing_fallback",
+          "elapsed_ms=526060.46"
+        ]
+      },
+      {
+        "trial_index": 1,
+        "solver_kind": "classical",
+        "solver_name": "cp_sat",
+        "backend_type": "ortools_cp_sat",
+        "seed": 222,
+        "elapsed_ms": 458.6985409259796,
+        "objective": 3.67396619047619,
+        "feasible": false,
+        "violation_count": 1,
+        "violation_breakdown": {
+          "overlap_violations": 0,
+          "boundary_violations": 0,
+          "assignment_violations": 0,
+          "activation_consistency_violations": 0,
+          "density_violations": 1,
+          "other_violations": 0
+        },
+        "best_progression": [
+          4.776156047619047,
+          4.225061119047618,
+          4.041362809523809,
+          3.9495136547619043,
+          3.894404161904762,
+          3.67396619047619
+        ],
+        "solution": {
+          "placements": [
+            {
+              "block_id": "B0",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 4,
+              "height": 5
+            },
+            {
+              "block_id": "B1",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 6,
+              "z": 8,
+              "height": 3
+            },
+            {
+              "block_id": "B2",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 16,
+              "z": 0,
+              "height": 8
+            },
+            {
+              "block_id": "B3",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 4,
+              "z": 0,
+              "height": 4
+            },
+            {
+              "block_id": "B4",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 12,
+              "z": 0,
+              "height": 8
+            },
+            {
+              "block_id": "B5",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 4
+            }
+          ],
+          "active_sectors": [
+            "S0"
+          ],
+          "objective": 3.67396619047619,
+          "feasible": false,
+          "violations": [
+            "density_deviation_excess"
+          ],
+          "violation_breakdown": {
+            "overlap_violations": 0,
+            "boundary_violations": 0,
+            "assignment_violations": 0,
+            "activation_consistency_violations": 0,
+            "density_violations": 1,
+            "other_violations": 0
+          },
+          "exact_optimum": false
+        },
+        "logs": [
+          "cp_sat_status=CpSolverStatus.OPTIMAL",
+          "elapsed_ms=457.62"
+        ]
+      },
+      {
+        "trial_index": 1,
+        "solver_kind": "hybrid",
+        "solver_name": "qubo_hybrid",
+        "backend_type": "simulated_annealing_fallback",
+        "seed": 222,
+        "elapsed_ms": 534624.2680419236,
+        "objective": 4.212061428575794,
+        "feasible": false,
+        "violation_count": 6,
+        "violation_breakdown": {
+          "overlap_violations": 5,
+          "boundary_violations": 0,
+          "assignment_violations": 0,
+          "activation_consistency_violations": 0,
+          "density_violations": 1,
+          "other_violations": 0
+        },
+        "best_progression": [
+          5.054473714290952,
+          4.422664500004584,
+          3.790855285718214,
+          3.1590460714318453,
+          2.527236857145476,
+          1.895427642859107,
+          4.212061428575794
+        ],
+        "solution": {
+          "placements": [
+            {
+              "block_id": "B0",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 2,
+              "z": 8,
+              "height": 5
+            },
+            {
+              "block_id": "B1",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 6,
+              "z": 0,
+              "height": 3
+            },
+            {
+              "block_id": "B2",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 10,
+              "z": 2,
+              "height": 8
+            },
+            {
+              "block_id": "B3",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 8,
+              "z": 6,
+              "height": 4
+            },
+            {
+              "block_id": "B4",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 8,
+              "height": 8
+            },
+            {
+              "block_id": "B5",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 6,
+              "height": 4
+            }
+          ],
+          "active_sectors": [
+            "S0"
+          ],
+          "objective": 4.212061428575794,
+          "feasible": false,
+          "violations": [
+            "overlap:B0:B4",
+            "overlap:B0:B5",
+            "overlap:B1:B2",
+            "overlap:B2:B3",
+            "overlap:B4:B5",
+            "density_deviation_excess"
+          ],
+          "violation_breakdown": {
+            "overlap_violations": 5,
+            "boundary_violations": 0,
+            "assignment_violations": 0,
+            "activation_consistency_violations": 0,
+            "density_violations": 1,
+            "other_violations": 0
+          },
+          "exact_optimum": false
+        },
+        "logs": [
+          "backend=simulated_annealing_fallback",
+          "elapsed_ms=534623.82"
+        ]
+      },
+      {
+        "trial_index": 2,
+        "solver_kind": "classical",
+        "solver_name": "cp_sat",
+        "backend_type": "ortools_cp_sat",
+        "seed": 333,
+        "elapsed_ms": 339.66237492859364,
+        "objective": 3.67396619047619,
+        "feasible": false,
+        "violation_count": 1,
+        "violation_breakdown": {
+          "overlap_violations": 0,
+          "boundary_violations": 0,
+          "assignment_violations": 0,
+          "activation_consistency_violations": 0,
+          "density_violations": 1,
+          "other_violations": 0
+        },
+        "best_progression": [
+          4.776156047619047,
+          4.225061119047618,
+          4.041362809523809,
+          3.9495136547619043,
+          3.894404161904762,
+          3.67396619047619
+        ],
+        "solution": {
+          "placements": [
+            {
+              "block_id": "B0",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 4,
+              "height": 5
+            },
+            {
+              "block_id": "B1",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 6,
+              "z": 8,
+              "height": 3
+            },
+            {
+              "block_id": "B2",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 16,
+              "z": 0,
+              "height": 8
+            },
+            {
+              "block_id": "B3",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 4,
+              "z": 0,
+              "height": 4
+            },
+            {
+              "block_id": "B4",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 12,
+              "z": 0,
+              "height": 8
+            },
+            {
+              "block_id": "B5",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 4
+            }
+          ],
+          "active_sectors": [
+            "S0"
+          ],
+          "objective": 3.67396619047619,
+          "feasible": false,
+          "violations": [
+            "density_deviation_excess"
+          ],
+          "violation_breakdown": {
+            "overlap_violations": 0,
+            "boundary_violations": 0,
+            "assignment_violations": 0,
+            "activation_consistency_violations": 0,
+            "density_violations": 1,
+            "other_violations": 0
+          },
+          "exact_optimum": false
+        },
+        "logs": [
+          "cp_sat_status=CpSolverStatus.OPTIMAL",
+          "elapsed_ms=338.99"
+        ]
+      },
+      {
+        "trial_index": 2,
+        "solver_kind": "hybrid",
+        "solver_name": "qubo_hybrid",
+        "backend_type": "simulated_annealing_fallback",
+        "seed": 333,
+        "elapsed_ms": 537782.6815000735,
+        "objective": 4.450156666671032,
+        "feasible": false,
+        "violation_count": 4,
+        "violation_breakdown": {
+          "overlap_violations": 3,
+          "boundary_violations": 0,
+          "assignment_violations": 0,
+          "activation_consistency_violations": 0,
+          "density_violations": 1,
+          "other_violations": 0
+        },
+        "best_progression": [
+          5.340188000005238,
+          4.672664500004584,
+          4.0051410000039285,
+          3.337617500003274,
+          2.670094000002619,
+          2.0025705000019642,
+          4.450156666671032
+        ],
+        "solution": {
+          "placements": [
+            {
+              "block_id": "B0",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 14,
+              "z": 16,
+              "height": 5
+            },
+            {
+              "block_id": "B1",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 8,
+              "z": 8,
+              "height": 3
+            },
+            {
+              "block_id": "B2",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 12,
+              "z": 6,
+              "height": 8
+            },
+            {
+              "block_id": "B3",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 6,
+              "z": 0,
+              "height": 4
+            },
+            {
+              "block_id": "B4",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 14,
+              "z": 4,
+              "height": 8
+            },
+            {
+              "block_id": "B5",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 2,
+              "z": 2,
+              "height": 4
+            }
+          ],
+          "active_sectors": [
+            "S0"
+          ],
+          "objective": 4.450156666671032,
+          "feasible": false,
+          "violations": [
+            "overlap:B1:B2",
+            "overlap:B1:B4",
+            "overlap:B2:B4",
+            "density_deviation_excess"
+          ],
+          "violation_breakdown": {
+            "overlap_violations": 3,
+            "boundary_violations": 0,
+            "assignment_violations": 0,
+            "activation_consistency_violations": 0,
+            "density_violations": 1,
+            "other_violations": 0
+          },
+          "exact_optimum": false
+        },
+        "logs": [
+          "backend=simulated_annealing_fallback",
+          "elapsed_ms=537782.08"
+        ]
+      }
+    ],
+    "selected_penalty_scale": 5.0,
+    "penalty_sweep_results": [
+      {
+        "penalty_scale": 5.0,
+        "feasible": 0.0,
+        "objective": 4.4025376190519845,
+        "violation_count": 5.0
+      },
+      {
+        "penalty_scale": 10.0,
+        "feasible": 0.0,
+        "objective": 4.702537619054022,
+        "violation_count": 5.0
+      },
+      {
+        "penalty_scale": 20.0,
+        "feasible": 0.0,
+        "objective": 5.302537619069739,
+        "violation_count": 5.0
+      }
+    ]
+  },
+  "stats": {
+    "classical": {
+      "solver_name": "cp_sat",
+      "backend_type": "ortools_cp_sat",
+      "runtime": {
+        "mean": 434.64020794878405,
+        "median": 458.6985409259796,
+        "std": 85.52534021329915,
+        "ci95_low": 222.18348501465064,
+        "ci95_high": 647.0969308829175
+      },
+      "objective": {
+        "mean": 3.67396619047619,
+        "median": 3.67396619047619,
+        "std": 0.0,
+        "ci95_low": 3.67396619047619,
+        "ci95_high": 3.67396619047619
+      },
+      "feasibility_rate": 0.0,
+      "best_objective": 3.67396619047619,
+      "violation_mean": 1.0,
+      "violation_breakdown_mean": {
+        "activation_consistency_violations": 0.0,
+        "assignment_violations": 0.0,
+        "boundary_violations": 0.0,
+        "density_violations": 1.0,
+        "other_violations": 0.0,
+        "overlap_violations": 0.0
+      }
+    },
+    "hybrid": {
+      "solver_name": "qubo_hybrid",
+      "backend_type": "simulated_annealing_fallback",
+      "runtime": {
+        "mean": 532822.6740279546,
+        "median": 534624.2680419236,
+        "std": 6064.926618324169,
+        "ci95_low": 517756.5610963771,
+        "ci95_high": 547888.7869595321
+      },
+      "objective": {
+        "mean": 4.354918571432937,
+        "median": 4.4025376190519845,
+        "std": 0.12598815766974247,
+        "ci95_low": 4.041946637731583,
+        "ci95_high": 4.667890505134291
+      },
+      "feasibility_rate": 0.0,
+      "best_objective": 4.212061428575794,
+      "violation_mean": 4.333333333333333,
+      "violation_breakdown_mean": {
+        "activation_consistency_violations": 0.0,
+        "assignment_violations": 0.0,
+        "boundary_violations": 0.0,
+        "density_violations": 1.0,
+        "other_violations": 0.0,
+        "overlap_violations": 3.3333333333333335
+      }
+    },
+    "paired_p_value": 0.011218843056040647,
+    "paired_effect_size": -5.404891964066599,
+    "fairness_report": {
+      "comparison_type": "approximate-comparable",
+      "solver_mode": "strict_parity_mode",
+      "objective_differences": [
+        "Both use shared candidate linear terms skyline/compactness/density deviation.",
+        "QUBO includes penalty-enforced activation consistency; CP-SAT encodes it as hard implications.",
+        "Energy objective in QUBO may include residual penalty influence."
+      ],
+      "constraint_differences": [
+        "Both include exactly-one assignment and pairwise non-overlap over shared candidates.",
+        "CP-SAT constraints are hard; QUBO constraints rely on calibrated penalties."
+      ],
+      "formulation_differences": [
+        "Both solvers share discrete candidate placement variables (sector,x,y,z,orientation,height).",
+        "CP-SAT enforces non-overlap as hard linear constraints; QUBO enforces via quadratic penalties.",
+        "Sector activation variables are explicit in both; QUBO ties x->y via penalties."
+      ],
+      "backend_differences": [
+        "Classical uses OR-Tools CP-SAT branch-and-bound + SAT search.",
+        "Hybrid uses D-Wave hybrid sampler when available, otherwise simulated annealing fallback."
+      ],
+      "penalty_based_approximations": [
+        "QUBO penalty scaling may admit low-penalty infeasible samples before post-checking."
+      ],
+      "discretization_effects": [
+        "Candidate-grid discretization (stride/max candidates) approximates continuous placement."
+      ],
+      "parity_claim": "Strict mode improves comparability but does not guarantee exact equivalence when penalties are active.",
+      "interpretation_guidance": "approximate comparison"
+    }
+  }
+}

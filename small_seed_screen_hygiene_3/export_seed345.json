@@ -1,0 +1,861 @@
+{
+  "experiment": {
+    "id": "exp_a7a91181b2",
+    "scenario": {
+      "id": "scenario_c1917d304d",
+      "seed": 345,
+      "density_target": 0.55,
+      "compatibility_strength": 1.0,
+      "objective_weights": {
+        "active_sectors": 1.0,
+        "skyline_height": 1.0,
+        "compactness": 1.0,
+        "density_deviation": 1.0,
+        "compatibility": 1.0,
+        "accessibility": 0.5
+      },
+      "blocks": [
+        {
+          "id": "B0",
+          "width": 5,
+          "depth": 5,
+          "min_height": 7,
+          "max_height": 12,
+          "block_type": "civic",
+          "density_weight": 1.1411,
+          "compatibility_tags": [
+            "civic",
+            "mixed_use"
+          ]
+        },
+        {
+          "id": "B1",
+          "width": 10,
+          "depth": 5,
+          "min_height": 3,
+          "max_height": 15,
+          "block_type": "residential",
+          "density_weight": 0.7098,
+          "compatibility_tags": [
+            "residential",
+            "mixed_use"
+          ]
+        },
+        {
+          "id": "B2",
+          "width": 3,
+          "depth": 5,
+          "min_height": 4,
+          "max_height": 12,
+          "block_type": "residential",
+          "density_weight": 1.3889,
+          "compatibility_tags": [
+            "residential",
+            "mixed_use"
+          ]
+        },
+        {
+          "id": "B3",
+          "width": 7,
+          "depth": 8,
+          "min_height": 7,
+          "max_height": 12,
+          "block_type": "civic",
+          "density_weight": 0.7773,
+          "compatibility_tags": [
+            "civic",
+            "single_use"
+          ]
+        },
+        {
+          "id": "B4",
+          "width": 4,
+          "depth": 7,
+          "min_height": 3,
+          "max_height": 8,
+          "block_type": "civic",
+          "density_weight": 1.2042,
+          "compatibility_tags": [
+            "civic",
+            "mixed_use"
+          ]
+        },
+        {
+          "id": "B5",
+          "width": 5,
+          "depth": 3,
+          "min_height": 5,
+          "max_height": 15,
+          "block_type": "residential",
+          "density_weight": 0.8861,
+          "compatibility_tags": [
+            "residential",
+            "single_use"
+          ]
+        },
+        {
+          "id": "B6",
+          "width": 7,
+          "depth": 7,
+          "min_height": 5,
+          "max_height": 17,
+          "block_type": "office",
+          "density_weight": 1.6109,
+          "compatibility_tags": [
+            "office",
+            "mixed_use"
+          ]
+        },
+        {
+          "id": "B7",
+          "width": 3,
+          "depth": 9,
+          "min_height": 4,
+          "max_height": 15,
+          "block_type": "residential",
+          "density_weight": 0.7334,
+          "compatibility_tags": [
+            "residential",
+            "single_use"
+          ]
+        },
+        {
+          "id": "B8",
+          "width": 5,
+          "depth": 3,
+          "min_height": 5,
+          "max_height": 6,
+          "block_type": "office",
+          "density_weight": 1.5582,
+          "compatibility_tags": [
+            "office",
+            "mixed_use"
+          ]
+        },
+        {
+          "id": "B9",
+          "width": 4,
+          "depth": 7,
+          "min_height": 5,
+          "max_height": 13,
+          "block_type": "office",
+          "density_weight": 1.3209,
+          "compatibility_tags": [
+            "office",
+            "single_use"
+          ]
+        },
+        {
+          "id": "B10",
+          "width": 6,
+          "depth": 4,
+          "min_height": 6,
+          "max_height": 17,
+          "block_type": "commercial",
+          "density_weight": 1.3724,
+          "compatibility_tags": [
+            "commercial",
+            "single_use"
+          ]
+        },
+        {
+          "id": "B11",
+          "width": 3,
+          "depth": 8,
+          "min_height": 8,
+          "max_height": 20,
+          "block_type": "office",
+          "density_weight": 1.2084,
+          "compatibility_tags": [
+            "office",
+            "mixed_use"
+          ]
+        }
+      ],
+      "sectors": [
+        {
+          "id": "S0",
+          "width": 28,
+          "depth": 24,
+          "max_height": 30,
+          "capacity": 142,
+          "context": {
+            "sun_score": 0.9995498389755325,
+            "transit_score": 0.10181926331325541
+          }
+        },
+        {
+          "id": "S1",
+          "width": 24,
+          "depth": 27,
+          "max_height": 40,
+          "capacity": 138,
+          "context": {
+            "sun_score": 0.9829834199052432,
+            "transit_score": 0.3940499996515161
+          }
+        },
+        {
+          "id": "S2",
+          "width": 24,
+          "depth": 22,
+          "max_height": 40,
+          "capacity": 187,
+          "context": {
+            "sun_score": 0.14388667114821585,
+            "transit_score": 0.7855283514875269
+          }
+        },
+        {
+          "id": "S3",
+          "width": 24,
+          "depth": 22,
+          "max_height": 35,
+          "capacity": 136,
+          "context": {
+            "sun_score": 0.7807931922623157,
+            "transit_score": 0.4918772937555397
+          }
+        }
+      ],
+      "created_at": "2026-03-25T19:53:12.769964Z"
+    },
+    "config": {
+      "repeats": 1,
+      "classical_solver": "cp_sat",
+      "hybrid_solver": "qubo_hybrid",
+      "run_mode": "parallel",
+      "common_budget": {
+        "max_time_seconds": 4.0,
+        "max_iterations": 35,
+        "seed": 345,
+        "warm_start": false,
+        "penalty_scale": 60.0,
+        "conflict_penalty_multiplier": 6.0,
+        "strict_parity_mode": true
+      },
+      "seed_policy": "fixed",
+      "benchmark_preset": "custom",
+      "fairness_classification": "repair-assisted approximate-comparable",
+      "penalty_sweep": {
+        "enabled": false,
+        "candidates": [
+          5.0,
+          10.0,
+          20.0,
+          30.0
+        ],
+        "selection_metric": "feasibility_then_objective"
+      },
+      "density_clamp_mode": "off"
+    },
+    "status": "completed",
+    "created_at": "2026-03-25T19:53:12.771220Z",
+    "updated_at": "2026-03-25T20:00:36.412556Z",
+    "trials": [
+      {
+        "trial_index": 0,
+        "solver_kind": "classical",
+        "solver_name": "cp_sat",
+        "backend_type": "ortools_cp_sat",
+        "seed": 345,
+        "elapsed_ms": 217.5881250295788,
+        "objective": 0.0,
+        "feasible": false,
+        "violation_count": 1,
+        "violation_breakdown": {
+          "overlap_violations": 0,
+          "boundary_violations": 0,
+          "assignment_violations": 0,
+          "activation_consistency_violations": 0,
+          "density_violations": 0,
+          "other_violations": 1
+        },
+        "best_progression": [
+          0.0
+        ],
+        "solution": {
+          "placements": [],
+          "active_sectors": [],
+          "objective": 0.0,
+          "feasible": false,
+          "violations": [
+            "solver_no_certified_assignment:cp_sat"
+          ],
+          "violation_breakdown": {
+            "overlap_violations": 0,
+            "boundary_violations": 0,
+            "assignment_violations": 0,
+            "activation_consistency_violations": 0,
+            "density_violations": 0,
+            "other_violations": 1
+          },
+          "density_metrics": {},
+          "exact_optimum": false,
+          "solver_metadata": {
+            "cp_sat_status": "CpSolverStatus.INFEASIBLE",
+            "placement_extraction_invalid": true
+          },
+          "placement_geometry_valid": false
+        },
+        "logs": [
+          "cp_sat_status=CpSolverStatus.INFEASIBLE",
+          "elapsed_ms=217.19",
+          "placement_extraction_suppressed=non_certified_status"
+        ]
+      },
+      {
+        "trial_index": 0,
+        "solver_kind": "hybrid",
+        "solver_name": "qubo_hybrid",
+        "backend_type": "simulated_annealing_fallback",
+        "seed": 345,
+        "elapsed_ms": 443408.61191716976,
+        "objective": 12.999999999906866,
+        "feasible": false,
+        "violation_count": 37,
+        "violation_breakdown": {
+          "overlap_violations": 36,
+          "boundary_violations": 0,
+          "assignment_violations": 0,
+          "activation_consistency_violations": 0,
+          "density_violations": 1,
+          "other_violations": 0
+        },
+        "best_progression": [
+          15.599999999888238,
+          13.64999999990221,
+          11.699999999916178,
+          9.74999999993015,
+          7.799999999944119,
+          5.849999999958089,
+          12.999999999906866
+        ],
+        "solution": {
+          "placements": [
+            {
+              "block_id": "B0",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 7
+            },
+            {
+              "block_id": "B1",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 8,
+              "height": 3
+            },
+            {
+              "block_id": "B2",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 12,
+              "height": 4
+            },
+            {
+              "block_id": "B3",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 7
+            },
+            {
+              "block_id": "B4",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 3
+            },
+            {
+              "block_id": "B5",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 5
+            },
+            {
+              "block_id": "B6",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 5
+            },
+            {
+              "block_id": "B7",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 4
+            },
+            {
+              "block_id": "B8",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 16,
+              "height": 5
+            },
+            {
+              "block_id": "B9",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 5
+            },
+            {
+              "block_id": "B10",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 6
+            },
+            {
+              "block_id": "B11",
+              "sector_id": "S0",
+              "orientation": 0,
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "height": 8
+            }
+          ],
+          "active_sectors": [
+            "S0"
+          ],
+          "objective": 12.999999999906866,
+          "feasible": false,
+          "violations": [
+            "overlap:B0:B3",
+            "overlap:B0:B4",
+            "overlap:B0:B5",
+            "overlap:B0:B6",
+            "overlap:B0:B7",
+            "overlap:B0:B9",
+            "overlap:B0:B10",
+            "overlap:B0:B11",
+            "overlap:B3:B4",
+            "overlap:B3:B5",
+            "overlap:B3:B6",
+            "overlap:B3:B7",
+            "overlap:B3:B9",
+            "overlap:B3:B10",
+            "overlap:B3:B11",
+            "overlap:B4:B5",
+            "overlap:B4:B6",
+            "overlap:B4:B7",
+            "overlap:B4:B9",
+            "overlap:B4:B10",
+            "overlap:B4:B11",
+            "overlap:B5:B6",
+            "overlap:B5:B7",
+            "overlap:B5:B9",
+            "overlap:B5:B10",
+            "overlap:B5:B11",
+            "overlap:B6:B7",
+            "overlap:B6:B9",
+            "overlap:B6:B10",
+            "overlap:B6:B11",
+            "overlap:B7:B9",
+            "overlap:B7:B10",
+            "overlap:B7:B11",
+            "overlap:B9:B10",
+            "overlap:B9:B11",
+            "overlap:B10:B11",
+            "density_deviation_excess:0.550000"
+          ],
+          "violation_breakdown": {
+            "overlap_violations": 36,
+            "boundary_violations": 0,
+            "assignment_violations": 0,
+            "activation_consistency_violations": 0,
+            "density_violations": 1,
+            "other_violations": 0
+          },
+          "density_metrics": {
+            "density_total": 72.4421,
+            "density_min_total": 72.4421,
+            "density_max_total": 185.66570000000002,
+            "density_norm": 0.0,
+            "density_target": 0.55,
+            "density_gap": 0.55,
+            "density_tolerance": 0.2
+          },
+          "exact_optimum": false,
+          "solver_metadata": {
+            "qubo_soft_penalty_constraints": true,
+            "decode_mode": "feasibility_first_greedy",
+            "sample_activation_fallback": true
+          },
+          "placement_geometry_valid": true
+        },
+        "logs": [
+          "backend=simulated_annealing_fallback",
+          "decode=feasibility_first_greedy",
+          "decode=feasibility_first_overlap_repair",
+          "elapsed_ms=443408.56"
+        ]
+      }
+    ],
+    "selected_penalty_scale": 60.0,
+    "penalty_sweep_results": [],
+    "density_achievability": {
+      "achievable_density_min": 0.0,
+      "achievable_density_max": 0.9400601994637161,
+      "target_density": 0.55,
+      "achievability_valid": true,
+      "target_inside_achievable_band": true,
+      "feasibility_margin": 0.39006019946371606,
+      "candidate_truncation_risk": true,
+      "candidate_cap_used": 24,
+      "global_density_total_min": 72.4421,
+      "global_density_total_max": 185.66570000000002,
+      "strict_parity_mode": true,
+      "items": [
+        {
+          "block_id": "B0",
+          "candidate_count": 24,
+          "density_total_min": 7.9877,
+          "density_total_max": 12.5521
+        },
+        {
+          "block_id": "B1",
+          "candidate_count": 24,
+          "density_total_min": 2.1294,
+          "density_total_max": 10.647
+        },
+        {
+          "block_id": "B2",
+          "candidate_count": 24,
+          "density_total_min": 5.5556,
+          "density_total_max": 16.666800000000002
+        },
+        {
+          "block_id": "B3",
+          "candidate_count": 24,
+          "density_total_min": 5.4411,
+          "density_total_max": 8.5503
+        },
+        {
+          "block_id": "B4",
+          "candidate_count": 24,
+          "density_total_min": 3.6125999999999996,
+          "density_total_max": 8.4294
+        },
+        {
+          "block_id": "B5",
+          "candidate_count": 24,
+          "density_total_min": 4.4305,
+          "density_total_max": 13.2915
+        },
+        {
+          "block_id": "B6",
+          "candidate_count": 24,
+          "density_total_min": 8.0545,
+          "density_total_max": 27.3853
+        },
+        {
+          "block_id": "B7",
+          "candidate_count": 24,
+          "density_total_min": 2.9336,
+          "density_total_max": 10.267600000000002
+        },
+        {
+          "block_id": "B8",
+          "candidate_count": 24,
+          "density_total_min": 7.791,
+          "density_total_max": 7.791
+        },
+        {
+          "block_id": "B9",
+          "candidate_count": 24,
+          "density_total_min": 6.6045,
+          "density_total_max": 17.1717
+        },
+        {
+          "block_id": "B10",
+          "candidate_count": 24,
+          "density_total_min": 8.2344,
+          "density_total_max": 21.9584
+        },
+        {
+          "block_id": "B11",
+          "candidate_count": 24,
+          "density_total_min": 9.6672,
+          "density_total_max": 24.168
+        }
+      ],
+      "achievability_band_width": 0.9400601994637161,
+      "achievability_degenerate": false,
+      "adjustment_allowed": true,
+      "benchmark_comparable": true,
+      "benchmark_out_of_band": false,
+      "benchmark_structurally_infeasible_target": false,
+      "benchmark_non_comparable": false,
+      "density_target_requested": 0.55,
+      "density_target_stored_for_solve": 0.55,
+      "density_clamp_applied": false,
+      "density_target_adjusted_value": null,
+      "target_adjustment_applied": false,
+      "target_adjusted_for_feasibility": 0.55
+    }
+  },
+  "stats": {
+    "classical": {
+      "solver_name": "cp_sat",
+      "backend_type": "ortools_cp_sat",
+      "runtime": {
+        "mean": 217.5881250295788,
+        "median": 217.5881250295788,
+        "std": 0.0,
+        "ci95_low": 217.5881250295788,
+        "ci95_high": 217.5881250295788
+      },
+      "objective": {
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      "feasibility_rate": 0.0,
+      "best_objective": 0.0,
+      "violation_mean": 1.0,
+      "violation_breakdown_mean": {
+        "activation_consistency_violations": 0.0,
+        "assignment_violations": 0.0,
+        "boundary_violations": 0.0,
+        "density_violations": 0.0,
+        "other_violations": 1.0,
+        "overlap_violations": 0.0
+      }
+    },
+    "hybrid": {
+      "solver_name": "qubo_hybrid",
+      "backend_type": "simulated_annealing_fallback",
+      "runtime": {
+        "mean": 443408.61191716976,
+        "median": 443408.61191716976,
+        "std": 0.0,
+        "ci95_low": 443408.61191716976,
+        "ci95_high": 443408.61191716976
+      },
+      "objective": {
+        "mean": 12.999999999906866,
+        "median": 12.999999999906866,
+        "std": 0.0,
+        "ci95_low": 12.999999999906866,
+        "ci95_high": 12.999999999906866
+      },
+      "feasibility_rate": 0.0,
+      "best_objective": 12.999999999906866,
+      "violation_mean": 37.0,
+      "violation_breakdown_mean": {
+        "activation_consistency_violations": 0.0,
+        "assignment_violations": 0.0,
+        "boundary_violations": 0.0,
+        "density_violations": 1.0,
+        "other_violations": 0.0,
+        "overlap_violations": 36.0
+      }
+    },
+    "paired_p_value": null,
+    "paired_effect_size": null,
+    "fairness_report": {
+      "comparison_type": "repair-assisted approximate-comparable",
+      "fairness_classification_inferred": "repair-assisted approximate-comparable",
+      "classification_logic": [
+        "exact-comparable is not assigned to classical vs hybrid QUBO runs: CP-SAT uses hard constraints; QUBO uses penalties.",
+        "repair-assisted approximate-comparable applies when hybrid trials use feasibility-first greedy decode (decode_mode=feasibility_first_greedy) and/or sample_activation_fallback, or matching log markers.",
+        "strong-approximate-comparable applies under strict parity with hybrid but without recorded repair-assisted decode (legacy runs).",
+        "exploratory-only applies when strict_parity_mode is false."
+      ],
+      "hybrid_methodology_flags": {
+        "uses_soft_qubo_penalties": true,
+        "repair_assisted_decode": true,
+        "exact_solver_parity_claim": false
+      },
+      "solver_mode": "strict_parity_mode",
+      "objective_differences": [
+        "Both use shared candidate linear terms skyline/compactness/density deviation.",
+        "QUBO includes penalty-enforced activation consistency; CP-SAT encodes it as hard implications.",
+        "Energy objective in QUBO may include residual penalty influence."
+      ],
+      "constraint_differences": [
+        "Both include exactly-one assignment and pairwise non-overlap over shared candidates.",
+        "CP-SAT constraints are hard; QUBO constraints rely on calibrated penalties."
+      ],
+      "formulation_differences": [
+        "Both solvers share discrete candidate placement variables (sector,x,y,z,orientation,height).",
+        "CP-SAT enforces non-overlap as hard linear constraints; QUBO enforces via quadratic penalties.",
+        "Sector activation variables are explicit in both; QUBO ties x->y via penalties."
+      ],
+      "backend_differences": [
+        "Classical uses OR-Tools CP-SAT branch-and-bound + SAT search.",
+        "Hybrid uses D-Wave hybrid sampler when available, otherwise simulated annealing fallback."
+      ],
+      "penalty_based_approximations": [
+        "QUBO penalty scaling may admit low-penalty infeasible samples before post-checking."
+      ],
+      "discretization_effects": [
+        "Candidate-grid discretization (stride/max candidates) approximates continuous placement."
+      ],
+      "parity_claim": "Strict mode aligns candidate sets and terms; hybrid remains penalty-encoded with non-literal decode, so claims must stay approximate.",
+      "interpretation_guidance": "approximate comparison (repair-assisted decode; not literal QUBO placement or hard-constraint parity)",
+      "constraint_diagnostics": {
+        "classical_top_failures": [
+          [
+            "other_violations",
+            1.0
+          ],
+          [
+            "activation_consistency_violations",
+            0.0
+          ]
+        ],
+        "hybrid_top_failures": [
+          [
+            "overlap_violations",
+            36.0
+          ],
+          [
+            "density_violations",
+            1.0
+          ]
+        ],
+        "classical_failure_driver": "formulation-related",
+        "hybrid_failure_driver": "budget-related",
+        "same_failure_pattern": [],
+        "density_failure_same_trials": [],
+        "density_gap_mean": {
+          "classical": 0.0,
+          "hybrid": 0.55
+        },
+        "density_failure_reasoning": "solver-specific behavior dominates"
+      },
+      "density_achievability_note": "Experiments default to density_clamp_mode=off: requested density is preserved; see experiment.density_achievability for benchmark_comparable / achievability_degenerate / benchmark_out_of_band. Clamp only runs in explicit_fallback mode (relabeled)."
+    }
+  },
+  "density_benchmark_metadata": {
+    "achievable_density_min": 0.0,
+    "achievable_density_max": 0.9400601994637161,
+    "target_density": 0.55,
+    "achievability_valid": true,
+    "target_inside_achievable_band": true,
+    "feasibility_margin": 0.39006019946371606,
+    "candidate_truncation_risk": true,
+    "candidate_cap_used": 24,
+    "global_density_total_min": 72.4421,
+    "global_density_total_max": 185.66570000000002,
+    "strict_parity_mode": true,
+    "items": [
+      {
+        "block_id": "B0",
+        "candidate_count": 24,
+        "density_total_min": 7.9877,
+        "density_total_max": 12.5521
+      },
+      {
+        "block_id": "B1",
+        "candidate_count": 24,
+        "density_total_min": 2.1294,
+        "density_total_max": 10.647
+      },
+      {
+        "block_id": "B2",
+        "candidate_count": 24,
+        "density_total_min": 5.5556,
+        "density_total_max": 16.666800000000002
+      },
+      {
+        "block_id": "B3",
+        "candidate_count": 24,
+        "density_total_min": 5.4411,
+        "density_total_max": 8.5503
+      },
+      {
+        "block_id": "B4",
+        "candidate_count": 24,
+        "density_total_min": 3.6125999999999996,
+        "density_total_max": 8.4294
+      },
+      {
+        "block_id": "B5",
+        "candidate_count": 24,
+        "density_total_min": 4.4305,
+        "density_total_max": 13.2915
+      },
+      {
+        "block_id": "B6",
+        "candidate_count": 24,
+        "density_total_min": 8.0545,
+        "density_total_max": 27.3853
+      },
+      {
+        "block_id": "B7",
+        "candidate_count": 24,
+        "density_total_min": 2.9336,
+        "density_total_max": 10.267600000000002
+      },
+      {
+        "block_id": "B8",
+        "candidate_count": 24,
+        "density_total_min": 7.791,
+        "density_total_max": 7.791
+      },
+      {
+        "block_id": "B9",
+        "candidate_count": 24,
+        "density_total_min": 6.6045,
+        "density_total_max": 17.1717
+      },
+      {
+        "block_id": "B10",
+        "candidate_count": 24,
+        "density_total_min": 8.2344,
+        "density_total_max": 21.9584
+      },
+      {
+        "block_id": "B11",
+        "candidate_count": 24,
+        "density_total_min": 9.6672,
+        "density_total_max": 24.168
+      }
+    ],
+    "achievability_band_width": 0.9400601994637161,
+    "achievability_degenerate": false,
+    "adjustment_allowed": true,
+    "benchmark_comparable": true,
+    "benchmark_out_of_band": false,
+    "benchmark_structurally_infeasible_target": false,
+    "benchmark_non_comparable": false,
+    "density_target_requested": 0.55,
+    "density_target_stored_for_solve": 0.55,
+    "density_clamp_applied": false,
+    "density_target_adjusted_value": null,
+    "target_adjustment_applied": false,
+    "target_adjusted_for_feasibility": 0.55
+  }
+}

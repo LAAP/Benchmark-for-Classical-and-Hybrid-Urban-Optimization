@@ -1,0 +1,2634 @@
+{
+  "preset": "small",
+  "seeds": [
+    123,
+    234,
+    345
+  ],
+  "density_target": 0.55,
+  "per_seed": [
+    {
+      "seed": 123,
+      "density_target": 0.55,
+      "grid_operational_strict": {
+        "stride_xy": 3,
+        "stride_z": 2,
+        "max_candidates_per_block": 24
+      },
+      "structural_features_strict": {
+        "grid": {
+          "stride_xy": 3,
+          "stride_z": 2,
+          "max_candidates_per_block": 24
+        },
+        "candidates_per_block": {
+          "B0": 24,
+          "B1": 24,
+          "B2": 24,
+          "B3": 24,
+          "B4": 24,
+          "B5": 24,
+          "B6": 24,
+          "B7": 24,
+          "B8": 24,
+          "B9": 24,
+          "B10": 24,
+          "B11": 24
+        },
+        "candidates_total": 288,
+        "candidates_mean_per_block": 24.0,
+        "candidates_min_per_block": 24,
+        "candidates_max_per_block": 24,
+        "candidate_count_cv": 0.0,
+        "conflict_pair_count": 30125,
+        "inter_block_conflict_count": 26813,
+        "intra_block_exclusion_pairs": 3312,
+        "conflict_density": 0.7289246999612853,
+        "inter_block_conflict_density": 0.6487853271389856,
+        "occupancy_pressure_volume": 0.04027305625616844,
+        "max_block_footprint_ratio_vs_smallest_sector": 0.17786561264822134,
+        "blocks_per_sector": 3.0,
+        "candidate_truncation_risk": true,
+        "mean_block_height_span_levels": 8.5,
+        "symmetry_note": "candidate_count_cv captures imbalance across items; degenerate duplicate placements not enumerated"
+      },
+      "structural_features_non_strict_default_grid": {
+        "grid": {
+          "stride_xy": 2,
+          "stride_z": 2,
+          "max_candidates_per_block": 80
+        },
+        "candidates_per_block": {
+          "B0": 80,
+          "B1": 80,
+          "B2": 80,
+          "B3": 80,
+          "B4": 80,
+          "B5": 80,
+          "B6": 80,
+          "B7": 80,
+          "B8": 80,
+          "B9": 80,
+          "B10": 80,
+          "B11": 80
+        },
+        "candidates_total": 960,
+        "candidates_mean_per_block": 80.0,
+        "candidates_min_per_block": 80,
+        "candidates_max_per_block": 80,
+        "candidate_count_cv": 0.0,
+        "conflict_pair_count": 164405,
+        "inter_block_conflict_count": 126485,
+        "intra_block_exclusion_pairs": 37920,
+        "conflict_density": 0.3571537191518943,
+        "inter_block_conflict_density": 0.2747762426138339,
+        "occupancy_pressure_volume": 0.04027305625616844,
+        "max_block_footprint_ratio_vs_smallest_sector": 0.17786561264822134,
+        "blocks_per_sector": 3.0,
+        "candidate_truncation_risk": true,
+        "mean_block_height_span_levels": 8.5,
+        "symmetry_note": "candidate_count_cv captures imbalance across items; degenerate duplicate placements not enumerated"
+      },
+      "note_non_strict_default_grid": "Uses solver default non-strict grid (wider enumeration: lower stride_xy / higher cap for |blocks|>4). Compare against strict features for scale, not apples-to-apples sector reach.",
+      "sector_union_strict_operational_cap": [
+        "S0"
+      ],
+      "sector_union_non_strict_same_stride_cap_as_strict": [
+        "S0"
+      ],
+      "single_effective_sector_packing": true,
+      "sector_coverage_strict": {
+        "per_block": [
+          {
+            "block_id": "B0",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 1,
+            "height_min": 3,
+            "height_max": 3
+          },
+          {
+            "block_id": "B1",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 7,
+            "height_max": 15
+          },
+          {
+            "block_id": "B2",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 4,
+            "height_max": 14
+          },
+          {
+            "block_id": "B3",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 8,
+            "height_max": 16
+          },
+          {
+            "block_id": "B4",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 5,
+            "height_max": 13
+          },
+          {
+            "block_id": "B5",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 8,
+            "height_max": 12
+          },
+          {
+            "block_id": "B6",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 6,
+            "height_max": 16
+          },
+          {
+            "block_id": "B7",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 3,
+            "height_max": 9
+          },
+          {
+            "block_id": "B8",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 6,
+            "height_max": 16
+          },
+          {
+            "block_id": "B9",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 6,
+            "height_max": 14
+          },
+          {
+            "block_id": "B10",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 5,
+            "height_max": 15
+          },
+          {
+            "block_id": "B11",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 2,
+            "height_min": 7,
+            "height_max": 9
+          }
+        ],
+        "candidate_placements_per_sector": {
+          "S0": 288
+        }
+      },
+      "conflict_edges_total": 30125,
+      "block_pair_same_sector_stats": [
+        {
+          "block_a": "B0",
+          "block_b": "B1",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 296,
+          "same_sector_conflict_rate": 0.5138888888888888
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B2",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 245,
+          "same_sector_conflict_rate": 0.4253472222222222
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B3",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 296,
+          "same_sector_conflict_rate": 0.5138888888888888
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B4",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 260,
+          "same_sector_conflict_rate": 0.4513888888888889
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B5",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 263,
+          "same_sector_conflict_rate": 0.4565972222222222
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 282,
+          "same_sector_conflict_rate": 0.4895833333333333
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 209,
+          "same_sector_conflict_rate": 0.3628472222222222
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 282,
+          "same_sector_conflict_rate": 0.4895833333333333
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 260,
+          "same_sector_conflict_rate": 0.4513888888888889
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 282,
+          "same_sector_conflict_rate": 0.4895833333333333
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 212,
+          "same_sector_conflict_rate": 0.3680555555555556
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B2",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 453,
+          "same_sector_conflict_rate": 0.7864583333333334
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B3",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 498,
+          "same_sector_conflict_rate": 0.8645833333333334
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B4",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 471,
+          "same_sector_conflict_rate": 0.8177083333333334
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B5",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 480,
+          "same_sector_conflict_rate": 0.8333333333333334
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 483,
+          "same_sector_conflict_rate": 0.8385416666666666
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 426,
+          "same_sector_conflict_rate": 0.7395833333333334
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 483,
+          "same_sector_conflict_rate": 0.8385416666666666
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 471,
+          "same_sector_conflict_rate": 0.8177083333333334
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 483,
+          "same_sector_conflict_rate": 0.8385416666666666
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 394,
+          "same_sector_conflict_rate": 0.6840277777777778
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B3",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 453,
+          "same_sector_conflict_rate": 0.7864583333333334
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B4",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 426,
+          "same_sector_conflict_rate": 0.7395833333333334
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B5",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 435,
+          "same_sector_conflict_rate": 0.7552083333333334
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 438,
+          "same_sector_conflict_rate": 0.7604166666666666
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 381,
+          "same_sector_conflict_rate": 0.6614583333333334
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 438,
+          "same_sector_conflict_rate": 0.7604166666666666
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 426,
+          "same_sector_conflict_rate": 0.7395833333333334
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 438,
+          "same_sector_conflict_rate": 0.7604166666666666
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 338,
+          "same_sector_conflict_rate": 0.5868055555555556
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B4",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 471,
+          "same_sector_conflict_rate": 0.8177083333333334
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B5",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 480,
+          "same_sector_conflict_rate": 0.8333333333333334
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 483,
+          "same_sector_conflict_rate": 0.8385416666666666
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 426,
+          "same_sector_conflict_rate": 0.7395833333333334
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 483,
+          "same_sector_conflict_rate": 0.8385416666666666
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 471,
+          "same_sector_conflict_rate": 0.8177083333333334
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 483,
+          "same_sector_conflict_rate": 0.8385416666666666
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 394,
+          "same_sector_conflict_rate": 0.6840277777777778
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B5",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 453,
+          "same_sector_conflict_rate": 0.7864583333333334
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 456,
+          "same_sector_conflict_rate": 0.7916666666666666
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 399,
+          "same_sector_conflict_rate": 0.6927083333333334
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 456,
+          "same_sector_conflict_rate": 0.7916666666666666
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 444,
+          "same_sector_conflict_rate": 0.7708333333333334
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 456,
+          "same_sector_conflict_rate": 0.7916666666666666
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 354,
+          "same_sector_conflict_rate": 0.6145833333333334
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 465,
+          "same_sector_conflict_rate": 0.8072916666666666
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 408,
+          "same_sector_conflict_rate": 0.7083333333333334
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 465,
+          "same_sector_conflict_rate": 0.8072916666666666
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 453,
+          "same_sector_conflict_rate": 0.7864583333333334
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 465,
+          "same_sector_conflict_rate": 0.8072916666666666
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 358,
+          "same_sector_conflict_rate": 0.6215277777777778
+        },
+        {
+          "block_a": "B6",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 411,
+          "same_sector_conflict_rate": 0.7135416666666666
+        },
+        {
+          "block_a": "B6",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 468,
+          "same_sector_conflict_rate": 0.8125
+        },
+        {
+          "block_a": "B6",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 456,
+          "same_sector_conflict_rate": 0.7916666666666666
+        },
+        {
+          "block_a": "B6",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 468,
+          "same_sector_conflict_rate": 0.8125
+        },
+        {
+          "block_a": "B6",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 378,
+          "same_sector_conflict_rate": 0.65625
+        },
+        {
+          "block_a": "B7",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 411,
+          "same_sector_conflict_rate": 0.7135416666666666
+        },
+        {
+          "block_a": "B7",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 399,
+          "same_sector_conflict_rate": 0.6927083333333334
+        },
+        {
+          "block_a": "B7",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 411,
+          "same_sector_conflict_rate": 0.7135416666666666
+        },
+        {
+          "block_a": "B7",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 296,
+          "same_sector_conflict_rate": 0.5138888888888888
+        },
+        {
+          "block_a": "B8",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 456,
+          "same_sector_conflict_rate": 0.7916666666666666
+        },
+        {
+          "block_a": "B8",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 468,
+          "same_sector_conflict_rate": 0.8125
+        },
+        {
+          "block_a": "B8",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 378,
+          "same_sector_conflict_rate": 0.65625
+        },
+        {
+          "block_a": "B9",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 456,
+          "same_sector_conflict_rate": 0.7916666666666666
+        },
+        {
+          "block_a": "B9",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 354,
+          "same_sector_conflict_rate": 0.6145833333333334
+        },
+        {
+          "block_a": "B10",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 378,
+          "same_sector_conflict_rate": 0.65625
+        }
+      ],
+      "occupancy_coarse_2d": {
+        "single_sector_id": "S0",
+        "sector_floor_area": 528.0,
+        "sum_block_min_footprints_both_orientations": 556
+      },
+      "cap_probe_multi_sector_non_strict": {
+        "achieved": true,
+        "min_cap_binary_search": 826,
+        "union_sector_count_at_min_cap": 2,
+        "cap_upper_bound_used": 2048,
+        "strict_parity_mode": false,
+        "note": "Monotone cap search; strict stratified vs non-strict ordering can differ."
+      },
+      "cap_probe_multi_sector_strict": {
+        "achieved": true,
+        "min_cap_binary_search": 826,
+        "union_sector_count_at_min_cap": 2,
+        "cap_upper_bound_used": 2048,
+        "strict_parity_mode": true,
+        "note": "Monotone cap search; strict stratified vs non-strict ordering can differ."
+      },
+      "cp_sat_failure_hypotheses_ranked": [
+        {
+          "hypothesis": "single_sector_candidate_skew_from_cap_and_enumeration_order",
+          "strength": "high",
+          "detail": "Later sectors never appear before caps saturate; all inter-block conflicts arise inside one sector."
+        },
+        {
+          "hypothesis": "strict_parity_height_stratification_reducing_height_diversity",
+          "strength": "contextual",
+          "detail": "Compare unique_height_count per block in sector_coverage. At the operational strict cap, non-strict enumeration with the same stride/cap still often yields the same sector_union \u2014 parity mode is not the primary gate for multi-sector reach; enumeration saturation in the first sector is."
+        },
+        {
+          "hypothesis": "geometric_impossibility_on_discrete_grid_under_shared_sector",
+          "strength": "high",
+          "detail": "If the induced conflict graph has no multipartite independent transversal, CP-SAT is INFEASIBLE regardless of time limits."
+        },
+        {
+          "hypothesis": "sector_geometry_mismatch_blocking_placements",
+          "strength": "low_if_multi_sector_eventually_reachable_at_high_cap",
+          "detail": "If raising cap exposes additional sectors, geometry may still fit blocks but benchmarks never see those candidates."
+        }
+      ],
+      "hybrid_failure_context": {
+        "summary": "Hybrid uses the same candidate map and soft penalties; if the hard feasibility core (one-per-block, non-overlap) is already unrealizable on the candidate set CP-SAT uses, an unconstrained penalty minimizer can still output a sample, but post-evaluation will show mass overlap. Repair-assisted decode reduces some conflicts \u2014 not equivalent to a feasibility proof.",
+        "expected_when_cp_sat_infeasible": true,
+        "independent_of_penalties_partially": "Sampler+decode can pick geographically diverse violations; failure mode is not identical to CP-SAT's certificate, but root cause often remains the same compressed feasible region."
+      },
+      "narrative_points": [
+        "CP-SAT infeasibility here refers only to the multipartite conflict graph: pick exactly one candidate per block with no conflicting pair (overlap in the same sector). Density, compatibility (strict), and accessibility are not encoded as CP-SAT hard constraints.",
+        "Inter-block edges exist only for pairs of candidates in the same sector; different sectors never overlap.",
+        "All |blocks|=12 items share only sector(s) ['S0'] in the operative candidate sets (cap=24, strict_parity_mode=True). Enumeration order fills the per-block cap before later sectors appear, so the effective feasibility problem is single-sector 3D packing on the strided grid.",
+        "At least min sum of block footprints (=both orientations min w*d) \u2248 556.0 vs single-sector floor 528.0 for S0 \u2014 a coarse 2D necessary check only."
+      ]
+    },
+    {
+      "seed": 234,
+      "density_target": 0.55,
+      "grid_operational_strict": {
+        "stride_xy": 3,
+        "stride_z": 2,
+        "max_candidates_per_block": 24
+      },
+      "structural_features_strict": {
+        "grid": {
+          "stride_xy": 3,
+          "stride_z": 2,
+          "max_candidates_per_block": 24
+        },
+        "candidates_per_block": {
+          "B0": 24,
+          "B1": 24,
+          "B2": 24,
+          "B3": 24,
+          "B4": 24,
+          "B5": 24,
+          "B6": 24,
+          "B7": 24,
+          "B8": 24,
+          "B9": 24,
+          "B10": 24,
+          "B11": 24
+        },
+        "candidates_total": 288,
+        "candidates_mean_per_block": 24.0,
+        "candidates_min_per_block": 24,
+        "candidates_max_per_block": 24,
+        "candidate_count_cv": 0.0,
+        "conflict_pair_count": 30858,
+        "inter_block_conflict_count": 27546,
+        "intra_block_exclusion_pairs": 3312,
+        "conflict_density": 0.7466608594657376,
+        "inter_block_conflict_density": 0.6665214866434379,
+        "occupancy_pressure_volume": 0.02674280221540715,
+        "max_block_footprint_ratio_vs_smallest_sector": 0.13636363636363635,
+        "blocks_per_sector": 3.0,
+        "candidate_truncation_risk": true,
+        "mean_block_height_span_levels": 8.666666666666666,
+        "symmetry_note": "candidate_count_cv captures imbalance across items; degenerate duplicate placements not enumerated"
+      },
+      "structural_features_non_strict_default_grid": {
+        "grid": {
+          "stride_xy": 2,
+          "stride_z": 2,
+          "max_candidates_per_block": 80
+        },
+        "candidates_per_block": {
+          "B0": 80,
+          "B1": 80,
+          "B2": 80,
+          "B3": 80,
+          "B4": 80,
+          "B5": 80,
+          "B6": 80,
+          "B7": 80,
+          "B8": 80,
+          "B9": 80,
+          "B10": 80,
+          "B11": 80
+        },
+        "candidates_total": 960,
+        "candidates_mean_per_block": 80.0,
+        "candidates_min_per_block": 80,
+        "candidates_max_per_block": 80,
+        "candidate_count_cv": 0.0,
+        "conflict_pair_count": 152376,
+        "inter_block_conflict_count": 114456,
+        "intra_block_exclusion_pairs": 37920,
+        "conflict_density": 0.33102189781021896,
+        "inter_block_conflict_density": 0.2486444212721585,
+        "occupancy_pressure_volume": 0.02674280221540715,
+        "max_block_footprint_ratio_vs_smallest_sector": 0.13636363636363635,
+        "blocks_per_sector": 3.0,
+        "candidate_truncation_risk": true,
+        "mean_block_height_span_levels": 8.666666666666666,
+        "symmetry_note": "candidate_count_cv captures imbalance across items; degenerate duplicate placements not enumerated"
+      },
+      "note_non_strict_default_grid": "Uses solver default non-strict grid (wider enumeration: lower stride_xy / higher cap for |blocks|>4). Compare against strict features for scale, not apples-to-apples sector reach.",
+      "sector_union_strict_operational_cap": [
+        "S0"
+      ],
+      "sector_union_non_strict_same_stride_cap_as_strict": [
+        "S0"
+      ],
+      "single_effective_sector_packing": true,
+      "sector_coverage_strict": {
+        "per_block": [
+          {
+            "block_id": "B0",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 3,
+            "height_max": 15
+          },
+          {
+            "block_id": "B1",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 4,
+            "height_max": 10
+          },
+          {
+            "block_id": "B2",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 4,
+            "height_max": 14
+          },
+          {
+            "block_id": "B3",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 1,
+            "height_min": 7,
+            "height_max": 7
+          },
+          {
+            "block_id": "B4",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 8,
+            "height_max": 18
+          },
+          {
+            "block_id": "B5",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 8,
+            "height_max": 14
+          },
+          {
+            "block_id": "B6",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 8,
+            "height_max": 20
+          },
+          {
+            "block_id": "B7",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 3,
+            "height_max": 11
+          },
+          {
+            "block_id": "B8",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 8,
+            "height_max": 16
+          },
+          {
+            "block_id": "B9",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 4,
+            "height_max": 8
+          },
+          {
+            "block_id": "B10",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 7,
+            "height_max": 11
+          },
+          {
+            "block_id": "B11",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 6,
+            "height_max": 12
+          }
+        ],
+        "candidate_placements_per_sector": {
+          "S0": 288
+        }
+      },
+      "conflict_edges_total": 30858,
+      "block_pair_same_sector_stats": [
+        {
+          "block_a": "B0",
+          "block_b": "B1",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 384,
+          "same_sector_conflict_rate": 0.6666666666666666
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B2",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 411,
+          "same_sector_conflict_rate": 0.7135416666666666
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B3",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 336,
+          "same_sector_conflict_rate": 0.5833333333333334
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B4",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 471,
+          "same_sector_conflict_rate": 0.8177083333333334
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B5",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 453,
+          "same_sector_conflict_rate": 0.7864583333333334
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 478,
+          "same_sector_conflict_rate": 0.8298611111111112
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 393,
+          "same_sector_conflict_rate": 0.6822916666666666
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 456,
+          "same_sector_conflict_rate": 0.7916666666666666
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 357,
+          "same_sector_conflict_rate": 0.6197916666666666
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 438,
+          "same_sector_conflict_rate": 0.7604166666666666
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 423,
+          "same_sector_conflict_rate": 0.734375
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B2",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 381,
+          "same_sector_conflict_rate": 0.6614583333333334
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B3",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 284,
+          "same_sector_conflict_rate": 0.4930555555555556
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B4",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 445,
+          "same_sector_conflict_rate": 0.7725694444444444
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B5",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 423,
+          "same_sector_conflict_rate": 0.734375
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 455,
+          "same_sector_conflict_rate": 0.7899305555555556
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 363,
+          "same_sector_conflict_rate": 0.6302083333333334
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 426,
+          "same_sector_conflict_rate": 0.7395833333333334
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 327,
+          "same_sector_conflict_rate": 0.5677083333333334
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 408,
+          "same_sector_conflict_rate": 0.7083333333333334
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 393,
+          "same_sector_conflict_rate": 0.6822916666666666
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B3",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 326,
+          "same_sector_conflict_rate": 0.5659722222222222
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B4",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 469,
+          "same_sector_conflict_rate": 0.8142361111111112
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B5",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 450,
+          "same_sector_conflict_rate": 0.78125
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 476,
+          "same_sector_conflict_rate": 0.8263888888888888
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 390,
+          "same_sector_conflict_rate": 0.6770833333333334
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 453,
+          "same_sector_conflict_rate": 0.7864583333333334
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 354,
+          "same_sector_conflict_rate": 0.6145833333333334
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 435,
+          "same_sector_conflict_rate": 0.7552083333333334
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 420,
+          "same_sector_conflict_rate": 0.7291666666666666
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B4",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 404,
+          "same_sector_conflict_rate": 0.7013888888888888
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B5",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 372,
+          "same_sector_conflict_rate": 0.6458333333333334
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 416,
+          "same_sector_conflict_rate": 0.7222222222222222
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 149,
+          "same_sector_conflict_rate": 0.2586805555555556
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 382,
+          "same_sector_conflict_rate": 0.6631944444444444
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 252,
+          "same_sector_conflict_rate": 0.4375
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 346,
+          "same_sector_conflict_rate": 0.6006944444444444
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 330,
+          "same_sector_conflict_rate": 0.5729166666666666
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B5",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 508,
+          "same_sector_conflict_rate": 0.8819444444444444
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 523,
+          "same_sector_conflict_rate": 0.9079861111111112
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 429,
+          "same_sector_conflict_rate": 0.7447916666666666
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 510,
+          "same_sector_conflict_rate": 0.8854166666666666
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 420,
+          "same_sector_conflict_rate": 0.7291666666666666
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 495,
+          "same_sector_conflict_rate": 0.859375
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 481,
+          "same_sector_conflict_rate": 0.8350694444444444
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 512,
+          "same_sector_conflict_rate": 0.8888888888888888
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 432,
+          "same_sector_conflict_rate": 0.75
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 495,
+          "same_sector_conflict_rate": 0.859375
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 396,
+          "same_sector_conflict_rate": 0.6875
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 477,
+          "same_sector_conflict_rate": 0.828125
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 462,
+          "same_sector_conflict_rate": 0.8020833333333334
+        },
+        {
+          "block_a": "B6",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 414,
+          "same_sector_conflict_rate": 0.71875
+        },
+        {
+          "block_a": "B6",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 514,
+          "same_sector_conflict_rate": 0.8923611111111112
+        },
+        {
+          "block_a": "B6",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 432,
+          "same_sector_conflict_rate": 0.75
+        },
+        {
+          "block_a": "B6",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 501,
+          "same_sector_conflict_rate": 0.8697916666666666
+        },
+        {
+          "block_a": "B6",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 488,
+          "same_sector_conflict_rate": 0.8472222222222222
+        },
+        {
+          "block_a": "B7",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 435,
+          "same_sector_conflict_rate": 0.7552083333333334
+        },
+        {
+          "block_a": "B7",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 336,
+          "same_sector_conflict_rate": 0.5833333333333334
+        },
+        {
+          "block_a": "B7",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 417,
+          "same_sector_conflict_rate": 0.7239583333333334
+        },
+        {
+          "block_a": "B7",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 402,
+          "same_sector_conflict_rate": 0.6979166666666666
+        },
+        {
+          "block_a": "B8",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 399,
+          "same_sector_conflict_rate": 0.6927083333333334
+        },
+        {
+          "block_a": "B8",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 480,
+          "same_sector_conflict_rate": 0.8333333333333334
+        },
+        {
+          "block_a": "B8",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 465,
+          "same_sector_conflict_rate": 0.8072916666666666
+        },
+        {
+          "block_a": "B9",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 381,
+          "same_sector_conflict_rate": 0.6614583333333334
+        },
+        {
+          "block_a": "B9",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 366,
+          "same_sector_conflict_rate": 0.6354166666666666
+        },
+        {
+          "block_a": "B10",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 447,
+          "same_sector_conflict_rate": 0.7760416666666666
+        }
+      ],
+      "occupancy_coarse_2d": {
+        "single_sector_id": "S0",
+        "sector_floor_area": 576.0,
+        "sum_block_min_footprints_both_orientations": 391
+      },
+      "cap_probe_multi_sector_non_strict": {
+        "achieved": true,
+        "min_cap_binary_search": 1009,
+        "union_sector_count_at_min_cap": 2,
+        "cap_upper_bound_used": 2048,
+        "strict_parity_mode": false,
+        "note": "Monotone cap search; strict stratified vs non-strict ordering can differ."
+      },
+      "cap_probe_multi_sector_strict": {
+        "achieved": true,
+        "min_cap_binary_search": 1009,
+        "union_sector_count_at_min_cap": 2,
+        "cap_upper_bound_used": 2048,
+        "strict_parity_mode": true,
+        "note": "Monotone cap search; strict stratified vs non-strict ordering can differ."
+      },
+      "cp_sat_failure_hypotheses_ranked": [
+        {
+          "hypothesis": "single_sector_candidate_skew_from_cap_and_enumeration_order",
+          "strength": "high",
+          "detail": "Later sectors never appear before caps saturate; all inter-block conflicts arise inside one sector."
+        },
+        {
+          "hypothesis": "strict_parity_height_stratification_reducing_height_diversity",
+          "strength": "contextual",
+          "detail": "Compare unique_height_count per block in sector_coverage. At the operational strict cap, non-strict enumeration with the same stride/cap still often yields the same sector_union \u2014 parity mode is not the primary gate for multi-sector reach; enumeration saturation in the first sector is."
+        },
+        {
+          "hypothesis": "geometric_impossibility_on_discrete_grid_under_shared_sector",
+          "strength": "high",
+          "detail": "If the induced conflict graph has no multipartite independent transversal, CP-SAT is INFEASIBLE regardless of time limits."
+        },
+        {
+          "hypothesis": "sector_geometry_mismatch_blocking_placements",
+          "strength": "low_if_multi_sector_eventually_reachable_at_high_cap",
+          "detail": "If raising cap exposes additional sectors, geometry may still fit blocks but benchmarks never see those candidates."
+        }
+      ],
+      "hybrid_failure_context": {
+        "summary": "Hybrid uses the same candidate map and soft penalties; if the hard feasibility core (one-per-block, non-overlap) is already unrealizable on the candidate set CP-SAT uses, an unconstrained penalty minimizer can still output a sample, but post-evaluation will show mass overlap. Repair-assisted decode reduces some conflicts \u2014 not equivalent to a feasibility proof.",
+        "expected_when_cp_sat_infeasible": true,
+        "independent_of_penalties_partially": "Sampler+decode can pick geographically diverse violations; failure mode is not identical to CP-SAT's certificate, but root cause often remains the same compressed feasible region."
+      },
+      "narrative_points": [
+        "CP-SAT infeasibility here refers only to the multipartite conflict graph: pick exactly one candidate per block with no conflicting pair (overlap in the same sector). Density, compatibility (strict), and accessibility are not encoded as CP-SAT hard constraints.",
+        "Inter-block edges exist only for pairs of candidates in the same sector; different sectors never overlap.",
+        "All |blocks|=12 items share only sector(s) ['S0'] in the operative candidate sets (cap=24, strict_parity_mode=True). Enumeration order fills the per-block cap before later sectors appear, so the effective feasibility problem is single-sector 3D packing on the strided grid.",
+        "At least min sum of block footprints (=both orientations min w*d) \u2248 391.0 vs single-sector floor 576.0 for S0 \u2014 a coarse 2D necessary check only."
+      ]
+    },
+    {
+      "seed": 345,
+      "density_target": 0.55,
+      "grid_operational_strict": {
+        "stride_xy": 3,
+        "stride_z": 2,
+        "max_candidates_per_block": 24
+      },
+      "structural_features_strict": {
+        "grid": {
+          "stride_xy": 3,
+          "stride_z": 2,
+          "max_candidates_per_block": 24
+        },
+        "candidates_per_block": {
+          "B0": 24,
+          "B1": 24,
+          "B2": 24,
+          "B3": 24,
+          "B4": 24,
+          "B5": 24,
+          "B6": 24,
+          "B7": 24,
+          "B8": 24,
+          "B9": 24,
+          "B10": 24,
+          "B11": 24
+        },
+        "candidates_total": 288,
+        "candidates_mean_per_block": 24.0,
+        "candidates_min_per_block": 24,
+        "candidates_max_per_block": 24,
+        "candidate_count_cv": 0.0,
+        "conflict_pair_count": 30609,
+        "inter_block_conflict_count": 27297,
+        "intra_block_exclusion_pairs": 3312,
+        "conflict_density": 0.7406358885017421,
+        "inter_block_conflict_density": 0.6604965156794426,
+        "occupancy_pressure_volume": 0.021475256769374416,
+        "max_block_footprint_ratio_vs_smallest_sector": 0.10606060606060606,
+        "blocks_per_sector": 3.0,
+        "candidate_truncation_risk": true,
+        "mean_block_height_span_levels": 9.333333333333334,
+        "symmetry_note": "candidate_count_cv captures imbalance across items; degenerate duplicate placements not enumerated"
+      },
+      "structural_features_non_strict_default_grid": {
+        "grid": {
+          "stride_xy": 2,
+          "stride_z": 2,
+          "max_candidates_per_block": 80
+        },
+        "candidates_per_block": {
+          "B0": 80,
+          "B1": 80,
+          "B2": 80,
+          "B3": 80,
+          "B4": 80,
+          "B5": 80,
+          "B6": 80,
+          "B7": 80,
+          "B8": 80,
+          "B9": 80,
+          "B10": 80,
+          "B11": 80
+        },
+        "candidates_total": 960,
+        "candidates_mean_per_block": 80.0,
+        "candidates_min_per_block": 80,
+        "candidates_max_per_block": 80,
+        "candidate_count_cv": 0.0,
+        "conflict_pair_count": 134977,
+        "inter_block_conflict_count": 97057,
+        "intra_block_exclusion_pairs": 37920,
+        "conflict_density": 0.29322427876259993,
+        "inter_block_conflict_density": 0.21084680222453944,
+        "occupancy_pressure_volume": 0.021475256769374416,
+        "max_block_footprint_ratio_vs_smallest_sector": 0.10606060606060606,
+        "blocks_per_sector": 3.0,
+        "candidate_truncation_risk": true,
+        "mean_block_height_span_levels": 9.333333333333334,
+        "symmetry_note": "candidate_count_cv captures imbalance across items; degenerate duplicate placements not enumerated"
+      },
+      "note_non_strict_default_grid": "Uses solver default non-strict grid (wider enumeration: lower stride_xy / higher cap for |blocks|>4). Compare against strict features for scale, not apples-to-apples sector reach.",
+      "sector_union_strict_operational_cap": [
+        "S0"
+      ],
+      "sector_union_non_strict_same_stride_cap_as_strict": [
+        "S0"
+      ],
+      "single_effective_sector_packing": true,
+      "sector_coverage_strict": {
+        "per_block": [
+          {
+            "block_id": "B0",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 7,
+            "height_max": 11
+          },
+          {
+            "block_id": "B1",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 3,
+            "height_max": 15
+          },
+          {
+            "block_id": "B2",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 4,
+            "height_max": 12
+          },
+          {
+            "block_id": "B3",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 7,
+            "height_max": 11
+          },
+          {
+            "block_id": "B4",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 3,
+            "height_max": 7
+          },
+          {
+            "block_id": "B5",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 5,
+            "height_max": 15
+          },
+          {
+            "block_id": "B6",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 5,
+            "height_max": 17
+          },
+          {
+            "block_id": "B7",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 4,
+            "height_max": 14
+          },
+          {
+            "block_id": "B8",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 1,
+            "height_min": 5,
+            "height_max": 5
+          },
+          {
+            "block_id": "B9",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 5,
+            "height_max": 13
+          },
+          {
+            "block_id": "B10",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 6,
+            "height_max": 16
+          },
+          {
+            "block_id": "B11",
+            "candidate_count": 24,
+            "sectors_represented": [
+              "S0"
+            ],
+            "unique_height_count": 3,
+            "height_min": 8,
+            "height_max": 20
+          }
+        ],
+        "candidate_placements_per_sector": {
+          "S0": 288
+        }
+      },
+      "conflict_edges_total": 30609,
+      "block_pair_same_sector_stats": [
+        {
+          "block_a": "B0",
+          "block_b": "B1",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 438,
+          "same_sector_conflict_rate": 0.7604166666666666
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B2",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 417,
+          "same_sector_conflict_rate": 0.7239583333333334
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B3",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 462,
+          "same_sector_conflict_rate": 0.8020833333333334
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B4",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 381,
+          "same_sector_conflict_rate": 0.6614583333333334
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B5",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 465,
+          "same_sector_conflict_rate": 0.8072916666666666
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 474,
+          "same_sector_conflict_rate": 0.8229166666666666
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 435,
+          "same_sector_conflict_rate": 0.7552083333333334
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 314,
+          "same_sector_conflict_rate": 0.5451388888888888
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 453,
+          "same_sector_conflict_rate": 0.7864583333333334
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 465,
+          "same_sector_conflict_rate": 0.8072916666666666
+        },
+        {
+          "block_a": "B0",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 501,
+          "same_sector_conflict_rate": 0.8697916666666666
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B2",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 393,
+          "same_sector_conflict_rate": 0.6822916666666666
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B3",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 438,
+          "same_sector_conflict_rate": 0.7604166666666666
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B4",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 357,
+          "same_sector_conflict_rate": 0.6197916666666666
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B5",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 441,
+          "same_sector_conflict_rate": 0.765625
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 450,
+          "same_sector_conflict_rate": 0.78125
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 411,
+          "same_sector_conflict_rate": 0.7135416666666666
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 304,
+          "same_sector_conflict_rate": 0.5277777777777778
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 429,
+          "same_sector_conflict_rate": 0.7447916666666666
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 441,
+          "same_sector_conflict_rate": 0.765625
+        },
+        {
+          "block_a": "B1",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 478,
+          "same_sector_conflict_rate": 0.8298611111111112
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B3",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 417,
+          "same_sector_conflict_rate": 0.7239583333333334
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B4",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 336,
+          "same_sector_conflict_rate": 0.5833333333333334
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B5",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 420,
+          "same_sector_conflict_rate": 0.7291666666666666
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 432,
+          "same_sector_conflict_rate": 0.75
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 390,
+          "same_sector_conflict_rate": 0.6770833333333334
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 267,
+          "same_sector_conflict_rate": 0.4635416666666667
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 408,
+          "same_sector_conflict_rate": 0.7083333333333334
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 420,
+          "same_sector_conflict_rate": 0.7291666666666666
+        },
+        {
+          "block_a": "B2",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 462,
+          "same_sector_conflict_rate": 0.8020833333333334
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B4",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 381,
+          "same_sector_conflict_rate": 0.6614583333333334
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B5",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 465,
+          "same_sector_conflict_rate": 0.8072916666666666
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 474,
+          "same_sector_conflict_rate": 0.8229166666666666
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 435,
+          "same_sector_conflict_rate": 0.7552083333333334
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 314,
+          "same_sector_conflict_rate": 0.5451388888888888
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 453,
+          "same_sector_conflict_rate": 0.7864583333333334
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 465,
+          "same_sector_conflict_rate": 0.8072916666666666
+        },
+        {
+          "block_a": "B3",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 501,
+          "same_sector_conflict_rate": 0.8697916666666666
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B5",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 384,
+          "same_sector_conflict_rate": 0.6666666666666666
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 399,
+          "same_sector_conflict_rate": 0.6927083333333334
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 354,
+          "same_sector_conflict_rate": 0.6145833333333334
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 222,
+          "same_sector_conflict_rate": 0.3854166666666667
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 372,
+          "same_sector_conflict_rate": 0.6458333333333334
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 384,
+          "same_sector_conflict_rate": 0.6666666666666666
+        },
+        {
+          "block_a": "B4",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 432,
+          "same_sector_conflict_rate": 0.75
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B6",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 451,
+          "same_sector_conflict_rate": 0.7829861111111112
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 438,
+          "same_sector_conflict_rate": 0.7604166666666666
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 172,
+          "same_sector_conflict_rate": 0.2986111111111111
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 456,
+          "same_sector_conflict_rate": 0.7916666666666666
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 468,
+          "same_sector_conflict_rate": 0.8125
+        },
+        {
+          "block_a": "B5",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 453,
+          "same_sector_conflict_rate": 0.7864583333333334
+        },
+        {
+          "block_a": "B6",
+          "block_b": "B7",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 448,
+          "same_sector_conflict_rate": 0.7777777777777778
+        },
+        {
+          "block_a": "B6",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 337,
+          "same_sector_conflict_rate": 0.5850694444444444
+        },
+        {
+          "block_a": "B6",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 465,
+          "same_sector_conflict_rate": 0.8072916666666666
+        },
+        {
+          "block_a": "B6",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 475,
+          "same_sector_conflict_rate": 0.8246527777777778
+        },
+        {
+          "block_a": "B6",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 506,
+          "same_sector_conflict_rate": 0.8784722222222222
+        },
+        {
+          "block_a": "B7",
+          "block_b": "B8",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 294,
+          "same_sector_conflict_rate": 0.5104166666666666
+        },
+        {
+          "block_a": "B7",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 426,
+          "same_sector_conflict_rate": 0.7395833333333334
+        },
+        {
+          "block_a": "B7",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 438,
+          "same_sector_conflict_rate": 0.7604166666666666
+        },
+        {
+          "block_a": "B7",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 476,
+          "same_sector_conflict_rate": 0.8263888888888888
+        },
+        {
+          "block_a": "B8",
+          "block_b": "B9",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 310,
+          "same_sector_conflict_rate": 0.5381944444444444
+        },
+        {
+          "block_a": "B8",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 334,
+          "same_sector_conflict_rate": 0.5798611111111112
+        },
+        {
+          "block_a": "B8",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 367,
+          "same_sector_conflict_rate": 0.6371527777777778
+        },
+        {
+          "block_a": "B9",
+          "block_b": "B10",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 456,
+          "same_sector_conflict_rate": 0.7916666666666666
+        },
+        {
+          "block_a": "B9",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 492,
+          "same_sector_conflict_rate": 0.8541666666666666
+        },
+        {
+          "block_a": "B10",
+          "block_b": "B11",
+          "cross_pairs": 576,
+          "pairs_different_sectors": 0,
+          "pairs_same_sector": 576,
+          "same_sector_conflicting_pairs": 501,
+          "same_sector_conflict_rate": 0.8697916666666666
+        }
+      ],
+      "occupancy_coarse_2d": {
+        "single_sector_id": "S0",
+        "sector_floor_area": 672.0,
+        "sum_block_min_footprints_both_orientations": 356
+      },
+      "cap_probe_multi_sector_non_strict": {
+        "achieved": true,
+        "min_cap_binary_search": 1652,
+        "union_sector_count_at_min_cap": 2,
+        "cap_upper_bound_used": 2048,
+        "strict_parity_mode": false,
+        "note": "Monotone cap search; strict stratified vs non-strict ordering can differ."
+      },
+      "cap_probe_multi_sector_strict": {
+        "achieved": true,
+        "min_cap_binary_search": 1652,
+        "union_sector_count_at_min_cap": 2,
+        "cap_upper_bound_used": 2048,
+        "strict_parity_mode": true,
+        "note": "Monotone cap search; strict stratified vs non-strict ordering can differ."
+      },
+      "cp_sat_failure_hypotheses_ranked": [
+        {
+          "hypothesis": "single_sector_candidate_skew_from_cap_and_enumeration_order",
+          "strength": "high",
+          "detail": "Later sectors never appear before caps saturate; all inter-block conflicts arise inside one sector."
+        },
+        {
+          "hypothesis": "strict_parity_height_stratification_reducing_height_diversity",
+          "strength": "contextual",
+          "detail": "Compare unique_height_count per block in sector_coverage. At the operational strict cap, non-strict enumeration with the same stride/cap still often yields the same sector_union \u2014 parity mode is not the primary gate for multi-sector reach; enumeration saturation in the first sector is."
+        },
+        {
+          "hypothesis": "geometric_impossibility_on_discrete_grid_under_shared_sector",
+          "strength": "high",
+          "detail": "If the induced conflict graph has no multipartite independent transversal, CP-SAT is INFEASIBLE regardless of time limits."
+        },
+        {
+          "hypothesis": "sector_geometry_mismatch_blocking_placements",
+          "strength": "low_if_multi_sector_eventually_reachable_at_high_cap",
+          "detail": "If raising cap exposes additional sectors, geometry may still fit blocks but benchmarks never see those candidates."
+        }
+      ],
+      "hybrid_failure_context": {
+        "summary": "Hybrid uses the same candidate map and soft penalties; if the hard feasibility core (one-per-block, non-overlap) is already unrealizable on the candidate set CP-SAT uses, an unconstrained penalty minimizer can still output a sample, but post-evaluation will show mass overlap. Repair-assisted decode reduces some conflicts \u2014 not equivalent to a feasibility proof.",
+        "expected_when_cp_sat_infeasible": true,
+        "independent_of_penalties_partially": "Sampler+decode can pick geographically diverse violations; failure mode is not identical to CP-SAT's certificate, but root cause often remains the same compressed feasible region."
+      },
+      "narrative_points": [
+        "CP-SAT infeasibility here refers only to the multipartite conflict graph: pick exactly one candidate per block with no conflicting pair (overlap in the same sector). Density, compatibility (strict), and accessibility are not encoded as CP-SAT hard constraints.",
+        "Inter-block edges exist only for pairs of candidates in the same sector; different sectors never overlap.",
+        "All |blocks|=12 items share only sector(s) ['S0'] in the operative candidate sets (cap=24, strict_parity_mode=True). Enumeration order fills the per-block cap before later sectors appear, so the effective feasibility problem is single-sector 3D packing on the strided grid.",
+        "At least min sum of block footprints (=both orientations min w*d) \u2248 356.0 vs single-sector floor 672.0 for S0 \u2014 a coarse 2D necessary check only."
+      ]
+    }
+  ],
+  "aggregate": {
+    "all_preset_seeds_single_sector_under_operational_cap": true,
+    "interpretation": "Benchmark `small` preset seeds currently explore overlapping feasibility on a severely restricted candidate manifold: almost surely single-sector at cap=24 strict \u2014 diagnose before scaling benchmarks."
+  },
+  "recommendation": {
+    "is_primarily_structure_not_search_budget": true,
+    "cp_sat_status_interpretation": "INFEASIBLE is a feasibility proof in the CP model (not a timeout). If the candidate sets omit multi-sector diversity because caps truncate during first-sector enumeration, that is a structural artifact of the discrete candidate construction \u2014 not something a longer time limit fixes.",
+    "rationale": "All three preset seeds exhibit single-sector candidate unions at the operational strict cap, so every inter-block conflict is realized inside one sector. CP-SAT then solves a compressed 3D packing problem that may be impossible on the grid regardless of runtime.",
+    "smallest_defensible_next_test": "First on a single seed: add sector-balanced candidate budgets or modestly raise the per-block cap specifically to surface at least one additional sector before the cap is exhausted. This isolates enumeration skew from intrinsic geometry with minimal formulation churn.",
+    "ordering": [
+      "1) sector-balanced reach (or modest cap increase) \u2014 one seed, one A/B",
+      "2) if still INFEASIBLE, relax strict_parity_mode as a candidate-richness counterfactual (same cap ladder)",
+      "3) only then revisit packing geometry / sector definitions broadly"
+    ],
+    "avoid_for_now": "Expanding benchmark coverage before confirming whether single-sector skew explains the infeasibility surface."
+  }
+}
