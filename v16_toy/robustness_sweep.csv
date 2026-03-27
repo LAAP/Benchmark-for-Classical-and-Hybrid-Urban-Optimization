@@ -1,9 +1,0 @@
-seed,scenario_id,cand_total,conflict_pair_count,conflict_density,inter_block_conflicts,occupancy_pressure,footprint_pressure,truncation_risk,classical_feasible,hybrid_feasible,overlap_violations_classical,overlap_violations_hybrid,density_violations_classical,density_violations_hybrid,runtime_classical_ms,runtime_hybrid_ms,difficulty
-101,scenario_cb621b77c4,150,4741,0.42425,2941,0.0574,0.1732,True,True,True,0,0,0,0,51.37,53478.57,easy
-111,scenario_6dd16ae931,150,4847,0.43374,3047,0.0921,0.2415,True,True,True,0,0,0,0,51.48,54302.95,easy
-202,scenario_9ac97b4b07,150,4519,0.40438,2719,0.0548,0.1227,True,True,True,0,0,0,0,51.44,49341.81,easy
-222,scenario_17b4d5095a,150,6360,0.56913,4560,0.0958,0.2222,True,False,False,15,1,0,0,46.75,70423.97,hard
-303,scenario_d1829de6cc,150,5019,0.44913,3219,0.0615,0.1471,True,True,True,0,0,0,0,88.4,60184.47,easy
-333,scenario_6a67955fda,150,4221,0.37772,2421,0.0554,0.1754,True,True,True,0,0,0,0,46.05,48698.91,easy
-404,scenario_c87ef5e369,150,5501,0.49226,3701,0.0652,0.1235,True,True,True,0,0,0,0,52.69,58387.37,easy
-515,scenario_cf20274760,150,4053,0.36268,2253,0.0524,0.1754,True,True,True,0,0,0,0,49.64,45223.35,easy
